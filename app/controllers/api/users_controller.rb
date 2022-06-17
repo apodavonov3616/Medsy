@@ -1,6 +1,7 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
 
-    before_action :require_logged_in, only: [:show, :index]
+    # before_action :require_logged_in, only: [:show, :index]
+    skip_before_action :verify_authenticity_token
   
   def create
     @user = User.new(user_params)
@@ -9,7 +10,7 @@ class UsersController < ApplicationController
       redirect_to users_url
     else
       flash.now[:errors] = @user.errors.full_messages
-      render :new
+      render :show
     end
   end
 
