@@ -1,71 +1,80 @@
-import React from 'react';
+import React from "react";
+import { Link } from 'react-router-dom';
 
-class SessionForm extends React.Component {
+export default class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            password: ''
+            username: "",
+            email: "",
+            password: "",
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    update(field) {
-        return e => this.setState({
-            [field]: e.currentTarget.value
-        });
+    handleInput = type => {
+        return e => {
+            this.setState({ [type]: e.target.value });
+        }
     }
 
-    handleSubmit(e) {
+    handleSubmit = e => {
         e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.processForm(user);
-    }
-
-    renderErrors() {
-        return (
-            <ul>
-                {/* {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li> */}
-                {/* ))} */}
-            </ul>
-        );
+        const user = Object.assign( {}, this.state );
+        this.props.processForm(user); 
     }
 
     render() {
+        const otherFormType = (this.props.formType === "Sign In") ? ("Register") : ("Sign In");
+        const otherFormLink = (this.props.formType === "Sign In") ? ("register") : ("Sign In");
+        
+        const name = (
+            <>
+                <br></br>
+                <label classEmail="email-label">Email:
+                    <input 
+                        classEmail="email-input"
+                        type="text"
+                        value={this.state.email}
+                        onChange={this.handleInput("email")}
+                    />
+                </label>
+            </>
+        )   
+
         return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to Medsy!
-                    <br />
-                    Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div className="login-form">
-                        <br />
-                        <label>Username:
-                            <input type="text"
-                                value={this.state.username}
-                                onChange={this.update('username')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-                            <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                    </div>
+            <div className="session-form-container">
+                <h1 className="session-form-header">{this.props.formType}</h1>
+                <br></br>
+
+                <form className="session-form">
+                    <label className="username-label">username:
+                        <input
+                            className="username-input"
+                            type="text"
+                            value={this.state.username}
+                            onChange={this.handleInput("username")}
+                        />
+                    </label>
+
+                    { (this.props.formType === "Sign Up") && email }
+
+                    <br></br>
+                    <label className="password-label">Password:
+                        <input 
+                            className="password-input"
+                            type="password"
+                            value={this.state.password}
+                            onChange={this.handleInput("password")}
+                        />
+                    </label>
+                    <br></br>
+                    <button 
+                        className="session-form-button"
+                        onClick={this.handleSubmit}>
+                            {this.props.formType}
+                    </button>
                 </form>
             </div>
-        );
+        )
     }
 }
-
-export default SessionForm;
