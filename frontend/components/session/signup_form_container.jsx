@@ -5,7 +5,7 @@ import SessionForm from './session_form'
 import { signup } from "../../actions/session_actions"
 
 const mSTP = state => ({
-    errors: state.errors,
+    errors: state.errors.session,
     formType: 'Sign Up',
     navLink: <Link to="/login">log in instead</Link>,
 })
