@@ -9,6 +9,8 @@ class SessionForm extends React.Component {
             email: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+
     }
 
     update(field) {
@@ -21,6 +23,12 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+        this.props.closeModal()
+    }
+
+    closeModal(e) {
+        e.preventDefault();
+        this.props.closeModal();
     }
 
     renderErrors() {
@@ -52,6 +60,7 @@ class SessionForm extends React.Component {
 
         return (
             <div className="login-form-container">
+                <span className="modal-close" onClick={this.closeModal}>&times;</span>
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     Welcome to Medsy!
                     <br />
@@ -74,7 +83,7 @@ class SessionForm extends React.Component {
                                 className="login-input"
                             />
                         </label>
-                        { signingUp() }
+                        {signingUp()}
                         <br />
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>

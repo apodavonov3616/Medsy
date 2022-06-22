@@ -1,7 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = (props) => {
+
+    const { currentUser, logout } = props;
+
+    const openModal = (formType) => {
+        return e => {
+            e.preventDefault();
+            props.openModal(formType);
+        }
+    }
 
     const display = currentUser ? (
         <div>
@@ -10,8 +19,12 @@ const Greeting = ({ currentUser, logout }) => {
         </div>
     ) : (
         <div>
-            <Link className="button" to="/signup">Sign Up</Link>
-            <Link className="button" to="/login">Log In</Link>
+            <button className="modal-login-button" onClick={openModal('login')}>
+                <div>Sign in</div>
+            </button>
+            <button className="modal-signup-button" onClick={openModal('register')}>
+                <div>Register</div>
+            </button>
         </div>
     );
 
