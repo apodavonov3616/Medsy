@@ -23,7 +23,7 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
-        this.props.closeModal()
+        if (!this.props.errors) this.props.closeModal()
     }
 
     closeModal(e) {
@@ -80,6 +80,7 @@ class SessionForm extends React.Component {
                 Welcome to Medsy!
                 {/* < button onClick={openModal('login')} > hi</button > */}
                 <br />
+                <div className="error">{this.props.errors}</div>
                 Please {this.props.formType} or {otherForm()}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.renderErrors()}
