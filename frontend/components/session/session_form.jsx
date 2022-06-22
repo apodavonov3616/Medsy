@@ -10,7 +10,7 @@ class SessionForm extends React.Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.closeModal = this.closeModal.bind(this);
-
+        this.demoUser = this.demoUser.bind(this);
     }
 
     update(field) {
@@ -29,6 +29,12 @@ class SessionForm extends React.Component {
     closeModal(e) {
         e.preventDefault();
         this.props.closeModal();
+    }
+
+    demoUser(e) {
+        e.preventDefault();
+        const demo = { username: "Demo User", password: "password" };
+        this.props.processForm(demo).then(this.props.closeModal);
     }
 
     render() {
@@ -66,6 +72,16 @@ class SessionForm extends React.Component {
             this.props.errors.map((error, i) => <p className="login-errors" key={i}>{error}</p>)
         )
 
+        let demoUser = (
+            <input
+                type="submit"
+                value="Log In as Demo User"
+                className="form-button"
+                onClick={this.demoUser}
+            />
+        );
+
+
         return (
             < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
@@ -99,6 +115,8 @@ class SessionForm extends React.Component {
                             <input className="session-submit" type="submit" value={this.props.formType} />
                         </div>
                     </form>
+                    <div>or</div>
+                    {demoUser}
                 </div>
                 <div></div>
             </div >

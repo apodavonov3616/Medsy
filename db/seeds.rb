@@ -13,3 +13,9 @@ user1 = User.create(
     email: 'alisher@alisher.com',
     password: "password"
 )
+demo = User.create(
+    id: 2,
+    username: 'Demo User',
+    email: "demo@gmail.com",
+    password: "password"
+)
