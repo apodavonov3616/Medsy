@@ -46,7 +46,7 @@ class SessionForm extends React.Component {
     render() {
 
         const signingUp = () => {
-            if (this.props.formType === 'Sign Up') {
+            if (this.props.formType === 'Register') {
                 return (
                     <label>Email
                         <input
@@ -58,13 +58,30 @@ class SessionForm extends React.Component {
             }
         };
 
+        const otherForm = () => {
+            if (this.props.formType == "Register") {
+                return (
+                    <button onClick={openModal('login')}>Sign In</button>
+                )
+            } else {
+                return <button onClick={openModal('register')}>Register</button>
+            }
+        }
+        const openModal = (formType) => {
+            return e => {
+                e.preventDefault();
+                this.props.openModal(formType);
+            }
+        }
+
         return (
-            <div className="login-form-container">
+            < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
+                Welcome to Medsy!
+                {/* < button onClick={openModal('login')} > hi</button > */}
+                <br />
+                Please {this.props.formType} or {otherForm()}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to Medsy!
-                    <br />
-                    Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
                     <div className="login-form">
                         <br />
@@ -88,7 +105,7 @@ class SessionForm extends React.Component {
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>
                 </form>
-            </div>
+            </div >
         );
     }
 }

@@ -22,9 +22,9 @@ const Greeting = (props) => {
             <button className="modal-login-button" onClick={openModal('login')}>
                 <div>Sign in</div>
             </button>
-            <button className="modal-signup-button" onClick={openModal('register')}>
+            {/* <button className="modal-signup-button" onClick={openModal('register')}>
                 <div>Register</div>
-            </button>
+            </button> */}
         </div>
     );
 
