@@ -74,16 +74,20 @@ class SessionForm extends React.Component {
             }
         }
 
+        const errors = () => (
+            this.props.errors.map((error, i) => <p className="login-errors" key={i}>{error}</p>)
+        )
+
         return (
             < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
                 Welcome to Medsy!
                 {/* < button onClick={openModal('login')} > hi</button > */}
                 <br />
-                <div className="error">{this.props.errors}</div>
+                <div className="error">{errors()}</div>
                 Please {this.props.formType} or {otherForm()}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    {this.renderErrors()}
+                    {/* {this.renderErrors()} */}
                     <div className="login-form">
                         <br />
                         <label>Username:
