@@ -1,0 +1,80 @@
+.modal-login-button {
+    font-size: 13px;
+    line-height: 1.4;
+    min-height: 36px;
+    min-width: 36px;
+    padding-top: 5%;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.modal-login-button:hover {
+    background-color: rgb(243, 243, 235);
+}
+
+// .login-form-container {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 30px;
+//     border-width: 2.5px;
+//     border-color: #222222;
+//     background: white;
+//     border-radius: 24px;
+//     width: 380px;
+//     z-index: 10;
+// }
+
+.modal-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-container {
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 500px;
+}
+
+.modal-child button {
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px
+}
+
+.form-welcome {
+    font-size: 40px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.session-submit {
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px
+}
+
+.modal-close {
+    position: absolute;
+    color: white;
+    float: right;
+    font-size: 30px;
+    top: 0px;
+    right: -30px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}

@@ -69,33 +69,38 @@ class SessionForm extends React.Component {
         return (
             < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
-                Welcome to Medsy!
                 <br />
-                <div className="error">{errors()}</div>
-                Please {this.props.formType} or {otherForm()}
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    <div className="login-form">
-                        <br />
-                        <label>Username:
-                            <input type="text"
-                                value={this.state.username}
-                                onChange={this.update('username')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-                            <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
-                            />
-                        </label>
-                        {signingUp()}
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                    </div>
-                </form>
+                <div className="form-welcome">Welcome to Medsy!</div>
+                <div className='form'>
+                    <div className="error">{errors()}</div>
+                    <div> Please {this.props.formType} or {otherForm()}</div>
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
+                        <div className="login-form">
+                            <br />
+                            <label>Username:
+                                <input type="text"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    className="login-input"
+                                />
+                            </label>
+                            <br />
+                            <label>Password:
+                                <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    className="login-input"
+                                />
+                            </label>
+                            <br />
+                            {signingUp()}
+                            <br />
+                            <br />
+                            <input className="session-submit" type="submit" value={this.props.formType} />
+                        </div>
+                    </form>
+                </div>
+                <div></div>
             </div >
         );
     }

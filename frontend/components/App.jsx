@@ -10,14 +10,15 @@ import ModalContainer from './modal/modal_container';
 const App = () => (
     <div>
         <header>
-            <h1> Medsy </h1>
+            <h1 className="title"> Medsy </h1>
+            <div className="temporary-search-container"></div>
             <GreetingContainer />
             <ModalContainer />
         </header>
 
         <Switch>
-            <AuthRoute exact path="/login" component={LoginFormContainer} />
-            <AuthRoute exact path="/signup" component={SignupFormContainer} />
+            {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
+            <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
         </Switch>
     </div>
 );

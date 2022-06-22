@@ -1,0 +1,19 @@
+.title {
+    color: #F1641E;
+    height: 24px;
+    width: 24px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temporary-search-container {
+    height: 60px;
+    width: 80%;
+    background-color: rgb(175, 158, 158);
+}
