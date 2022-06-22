@@ -31,18 +31,6 @@ class SessionForm extends React.Component {
         this.props.closeModal();
     }
 
-    renderErrors() {
-        return (
-            <ul>
-                {/* {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li> */}
-                {/* ))} */}
-            </ul>
-        );
-    }
-
     render() {
 
         const signingUp = () => {
@@ -82,12 +70,10 @@ class SessionForm extends React.Component {
             < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
                 Welcome to Medsy!
-                {/* < button onClick={openModal('login')} > hi</button > */}
                 <br />
                 <div className="error">{errors()}</div>
                 Please {this.props.formType} or {otherForm()}
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    {/* {this.renderErrors()} */}
                     <div className="login-form">
                         <br />
                         <label>Username:
