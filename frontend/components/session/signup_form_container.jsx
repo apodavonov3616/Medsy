@@ -8,7 +8,7 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mSTP = state => ({
     errors: state.errors.session,
-    formType: 'Sign Up',
+    formType: 'Register',
     navLink: <Link to="/login">log in instead</Link>,
     errors: state.errors.session
 
@@ -17,6 +17,7 @@ const mSTP = state => ({
 const mDTP = dispatch => ({
     processForm: user => dispatch(signup(user)),
     closeModal: () => dispatch(closeModal()),
+    openModal: (formType) => dispatch(openModal(formType))
 })
 
 export default connect(mSTP, mDTP)(SessionForm);
