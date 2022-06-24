@@ -19,3 +19,12 @@ demo = User.create(
     email: "demo@gmail.com",
     password: "password"
 )
+
+medication1 = Medication.create(
+    id: 1,
+    seller_id: 1,
+    name: "Ibuprofen",
+    category: "NSAID",
+    description: "Ibuprofen is used to help relieve mild to moderate pain.",
+    price: 6.99
+)

@@ -3,9 +3,9 @@ class CreateMedications < ActiveRecord::Migration[5.2]
     create_table :medications do |t|
       t.integer :seller_id, null: false
       t.string :name, null: false
+      t.string :category, null: false
       t.text :description, null: false
       t.decimal :price, null: false
-      t.string :image_url
 
       t.timestamps
     end
