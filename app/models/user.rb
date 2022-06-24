@@ -5,6 +5,8 @@ class User < ApplicationRecord
     validates :session_token, presence: true, uniqueness: true
     attr_reader :password
 
+    has_one_attached :photo
+
     after_initialize :ensure_session_token
 
     def self.find_by_credentials(username, password)

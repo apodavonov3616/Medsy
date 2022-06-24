@@ -1,0 +1,14 @@
+=> [32m#<ActiveStorage::Attached::One:0x0000561292a66698[0m
+ @dependent[32m=[0m[33m:purge_later[0m,
+ @name[32m=[0m[31m[1;31m"[0m[31mphoto[1;31m"[0m[31m[0m,
+ @record[32m=[0m
+  [32m#<User:0x000056128eed4300[0m
+   id: [1;34m1[0m,
+   username: [31m[1;31m"[0m[31malisher[1;31m"[0m[31m[0m,
+   email: [31m[1;31m"[0m[31malisher@alisher.com[1;31m"[0m[31m[0m,
+   password_digest:
+    [31m[1;31m"[0m[31m$2a$12$vorRD9whIc5YiTgHaHoSSOSIIjTLNZqdY7mGtJZnEDMsGrugRPAwW[1;31m"[0m[31m[0m,
+   session_token:
+    [31m[1;31m"[0m[31m4gPYql4//JOTdZ1hrtZ/KceyI56MDp2MY6g4iDS+V+KIp7QtYGyaWzERy0IcXDJVDOg3EjB7aRKpxKxWqqqvBg==[1;31m"[0m[31m[0m,
+   created_at: [1;34;4mWed[0m, [1;34m22[0m [1;34;4mJun[0m [1;34m2022[0m [1;34m04[0m:[1;34m12[0m:[1;34m16[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+   updated_at: [1;34;4mWed[0m, [1;34m22[0m [1;34;4mJun[0m [1;34m2022[0m [1;34m04[0m:[1;34m12[0m:[1;34m16[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m[32m>[0m
