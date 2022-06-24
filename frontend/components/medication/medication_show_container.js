@@ -4,7 +4,7 @@ import { fetchMedication } from "../../actions/medication_actions";
 
 
 const mSTP = (state, ownProps) => ({
-    medication: state.entities.medications[ownProps.match.params.medicationId],
+    // medication: state.entities.medications[ownProps.match.params.id],
     currentUser: state.entities.users[state.session.id],
     user: state.session.id
   });

@@ -5,6 +5,8 @@ import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import { AuthRoute } from "../util/route_util";
 import ModalContainer from './modal/modal_container';
+import MedicationShowContainer from "./medication/medication_show_container";
+
 
 
 const App = () => (
@@ -14,11 +16,13 @@ const App = () => (
             <div className="temporary-search-container"></div>
             <GreetingContainer />
             <ModalContainer />
+            {/* <MedicationShowContainer/> */}
         </header>
 
         <Switch>
             {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
+            <Route path="/medications/:medicationId" component={MedicationShowContainer}/>
         </Switch>
     </div>
 );

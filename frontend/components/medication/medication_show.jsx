@@ -10,8 +10,10 @@ class MedicationShow extends React.Component {
         const { medication } = this.props;
         return (
             <div>
-                <p>{medication.id}</p>
+                <p>hi</p>
             </div>
         )
     }
 }
+
+export default MedicationShow;
