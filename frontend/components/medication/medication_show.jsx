@@ -10,7 +10,10 @@ const MedicationShow = (props) => {
     if (!medication) return null
     return (
         <div>
-            {medication.name}
+            <div>{medication.name}</div>
+            <div>{medication.category_name}</div>
+            <div>{medication.description}</div>
+            <div>{medication.price}</div>
         </div>
     )
 }

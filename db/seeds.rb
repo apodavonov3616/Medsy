@@ -25,7 +25,16 @@ medication1 = Medication.create(
     id: 1,
     seller_id: 1,
     name: "Ibuprofen",
-    category: "NSAID",
+    category_name: "NSAID",
     description: "Ibuprofen is used to help relieve mild to moderate pain.",
     price: 6.99
+)
+
+medication2 = Medication.create(
+    id: 2,
+    category_name: "Pain Relief",
+    seller_id: 2,
+    name: "Tylenol",
+    description: "Tylenol is used to help relieve pain.",
+    price: 5.99
 )

@@ -39,11 +39,12 @@ ActiveRecord::Schema.define(version: 2022_06_24_191849) do
   create_table "medications", force: :cascade do |t|
     t.integer "seller_id", null: false
     t.string "name", null: false
-    t.string "category", null: false
+    t.string "category_name", null: false
     t.text "description", null: false
     t.decimal "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["category_name"], name: "index_medications_on_category_name"
     t.index ["name"], name: "index_medications_on_name"
     t.index ["seller_id"], name: "index_medications_on_seller_id"
   end
