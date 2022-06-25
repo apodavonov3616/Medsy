@@ -4,7 +4,6 @@ const MedicationShow = (props) => {
 
     useEffect(() => {
         props.fetchMedication(props.match.params.medicationId)
-        // fetchPinShowInfo();
     }, [])
 
     const { medication } = props
