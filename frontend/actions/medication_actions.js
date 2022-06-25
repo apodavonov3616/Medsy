@@ -10,7 +10,7 @@ export const receiveAllMedications = (medications) => ({
 
 export const receiveMedication = (medication) => ({
   type: RECEIVE_MEDICATION,
-  medication,
+  medication
 });
 
 export const fetchMedications = () => (dispatch) => {

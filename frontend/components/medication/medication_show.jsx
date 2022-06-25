@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
-class MedicationShow extends React.Component {
-    constructor(props) {
-        super(props);
+const MedicationShow = (props) => {
 
-    }
+    useEffect(() => {
+        props.fetchMedication(props.match.params.medicationId)
+        // fetchPinShowInfo();
+    }, [])
 
-    render() {
-        const { medication } = this.props;
-        return (
-            <div>
-                <p>hi</p>
-            </div>
-        )
-    }
+    const { medication } = props
+    if (!medication) return null
+    return (
+        <div>
+            {medication.name}
+        </div>
+    )
 }
 
 export default MedicationShow;

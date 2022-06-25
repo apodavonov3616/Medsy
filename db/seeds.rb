@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Medication.destroy_all
 user1 = User.create(
     id: 1,
     username: 'alisher',
