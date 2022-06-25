@@ -8,10 +8,9 @@ class MedicationShow extends React.Component {
 
     render() {
         const { medication } = this.props;
-        debugger
         return (
             <div>
-                <p>{medication.name}</p>
+                <p>hi</p>
             </div>
         )
     }
