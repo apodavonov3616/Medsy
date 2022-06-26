@@ -6,6 +6,8 @@ import SignupFormContainer from "./session/signup_form_container";
 import { AuthRoute } from "../util/route_util";
 import ModalContainer from './modal/modal_container';
 import MedicationShowContainer from "./medication/medication_show_container";
+import MedicationIndexContainer from './medication/medication_index_container';
+
 
 
 
@@ -23,6 +25,8 @@ const App = () => (
             {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
             <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
+            <Route exact path="/" component={MedicationIndexContainer} />
+
         </Switch>
     </div>
 );
