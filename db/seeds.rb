@@ -38,3 +38,12 @@ medication2 = Medication.create(
     description: "Tylenol is used to help relieve pain.",
     price: 5.99
 )
+
+medication3 = Medication.create(
+    id: 3,
+    category_name: "Pain Relief",
+    seller_id: 1,
+    name: "med3",
+    description: "med 3 details",
+    price: 4.99
+)
