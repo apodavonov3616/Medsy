@@ -14,6 +14,7 @@ const MedicationShow = (props) => {
             <div>{medication.category_name}</div>
             <div>{medication.description}</div>
             <div>{medication.price}</div>
+            <img src={medication.photoUrl} className="product-show-image" />
         </div>
     )
 }
