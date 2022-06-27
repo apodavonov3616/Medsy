@@ -29,6 +29,6 @@ medication1 = Medication.create(
     description: "Ibuprofen is used to help relieve mild to moderate pain.",
     price: 6.99
 )
-image1 = URI.open("https://medsy-dev.s3.amazonaws.com/Business+Card+II.png")
+image1 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication1.photo.attach(io: image1, filename:"image1.jpg")
 
