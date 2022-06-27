@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import { AuthRoute } from "../util/route_util";
+import { Link } from "react-router-dom";
 import ModalContainer from './modal/modal_container';
 import MedicationShowContainer from "./medication/medication_show_container";
 import MedicationIndexContainer from './medication/medication_index_container';
@@ -14,7 +15,7 @@ import MedicationIndexContainer from './medication/medication_index_container';
 const App = () => (
     <div>
         <header>
-            <h1 className="title"> Medsy </h1>
+            <Link to="/" className="title">Medsy</Link>
             <div className="temporary-search-container"></div>
             <GreetingContainer />
             <ModalContainer />
