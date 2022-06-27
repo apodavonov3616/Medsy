@@ -29,21 +29,6 @@ medication1 = Medication.create(
     description: "Ibuprofen is used to help relieve mild to moderate pain.",
     price: 6.99
 )
+image1 = URI.open("https://medsy-dev.s3.amazonaws.com/Business+Card+II.png")
+medication1.photo.attach(io: image1, filename:"image1.jpg")
 
-medication2 = Medication.create(
-    id: 2,
-    category_name: "Pain Relief",
-    seller_id: 2,
-    name: "Tylenol",
-    description: "Tylenol is used to help relieve pain.",
-    price: 5.99
-)
-
-medication3 = Medication.create(
-    id: 3,
-    category_name: "Pain Relief",
-    seller_id: 1,
-    name: "med3",
-    description: "med 3 details",
-    price: 4.99
-)
