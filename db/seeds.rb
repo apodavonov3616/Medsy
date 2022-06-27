@@ -32,3 +32,13 @@ medication1 = Medication.create(
 image1 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication1.photo.attach(io: image1, filename:"image1.jpg")
 
+medication2 = Medication.create(
+    id: 2,
+    seller_id: 2,
+    name: "Tylenol",
+    category_name: "Pain Killer",
+    description: "Tylenol is used to help relieve mild to moderate pain.",
+    price: 6.99
+)
+image2 = URI.open("https://medsy-seed.s3.amazonaws.com/tylenol.jpg")
+medication2.photo.attach(io: image2, filename:"image2.jpg")

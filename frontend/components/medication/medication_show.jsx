@@ -9,12 +9,20 @@ const MedicationShow = (props) => {
     const { medication } = props
     if (!medication) return null
     return (
-        <div>
-            <div>{medication.name}</div>
-            <div>{medication.category_name}</div>
-            <div>{medication.description}</div>
-            <div>{medication.price}</div>
-            <img src={medication.photoUrl} className="product-show-image" />
+        <div className="medication-show-page">
+            <div className="medication-show-info">
+                <div className="medication-image-container">
+                    <img src={medication.photoUrl} className="medication-show-image" />
+                </div>
+                <div className="medication-show-text">
+                    <div className="medication-show-seller">{medication.seller.username}</div>
+                    <div className="medication-show-name">{medication.name}</div>
+                    <div className="medication-show-price-container">
+                    <div className="medication-show-price">{medication.price}</div>
+                    </div>
+                    <div className="medication-show-description">{medication.description}</div>
+                </div>
+            </div>
         </div>
     )
 }
