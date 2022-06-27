@@ -7,20 +7,20 @@ const MedicationIndexItem = (props) => {
 
     return (
         <div className="medication-container">
-            <Link to={`/medications/${medication.id}`} className="medication-show-link">
+            {/* <Link to={`/medications/${medication.id}`} className="medication-show-link">
                 <div>{medication.name}</div>            
-            </Link>
-            {/* <li className='product-index-item' key={`product-${product.id}`}>
-                    <Link to={`/products/${medication.id}`}>
-                        <div className='product-index-image'>
-                            <img src={product.image_url} />
-                        </div>
-                        <div className="product-index-item-info">
-                            <div className="product-index-price">${product.price.toFixed(2)}</div>
-                            <div className="limited-time-offer">Limited Time Offer!</div>
-                        </div>
-                    </Link>
-                </li> */}
+            </Link> */}
+            <li className='medication-index-item' key={`medication-${medication.id}`}>
+                <Link to={`/medications/${medication.id}`}>
+                    <div>
+                        <img className='medication-index-photo' src={medication.photoUrl} />
+                    </div>
+                    <div className="medication-index-item-info">
+                        <div className="medication-index-price">${medication.price}</div>
+                        <div className="limited-time-offer">Limited Time Offer!</div>
+                    </div>
+                </Link>
+            </li>
         </div>
     )
 }

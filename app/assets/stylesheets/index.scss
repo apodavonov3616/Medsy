@@ -1,0 +1,40 @@
+.medication-index-container {
+    width: 1402px !important;
+    max-width: 1402px !important;
+    display: block !important;
+    position: relative;
+    float: left;
+    clear: both;
+    list-style: none;
+    justify-content: space-around !important;
+}
+.medication-index-item {
+    align-items: stretch;
+    display: block !important;
+    float: left;
+    width: 300px;
+    padding: 9px;
+}
+
+.medication-index-photo {
+    height: 300px;
+    width: 300px;
+}
+.medication-index-item-info {
+    flex-direction: row;
+    box-sizing: border-box;
+    div {
+        color: black;
+    }
+}
+.limited-time-offer {
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 17px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 40px;
+    background: #D4E9D7;
+}
