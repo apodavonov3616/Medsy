@@ -18,15 +18,11 @@ const App = () => (
             <div className="temporary-search-container"></div>
             <GreetingContainer />
             <ModalContainer />
-            {/* <MedicationShowContainer/> */}
         </header>
 
         <Switch>
-            {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
-            <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
             <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
             <Route exact path="/" component={MedicationIndexContainer} />
-
         </Switch>
     </div>
 );

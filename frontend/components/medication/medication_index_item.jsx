@@ -7,10 +7,8 @@ const MedicationIndexItem = (props) => {
 
     return (
         <div className="medication-container">
-            <div>{medication.name}</div>
-            <Link to={`/medication/${medication.id}`} className="medication-show-link">
-                <div className="hidden-medication-layer">
-                </div>
+            <Link to={`/medications/${medication.id}`} className="medication-show-link">
+                <div>{medication.name}</div>            
             </Link>
         </div>
     )
