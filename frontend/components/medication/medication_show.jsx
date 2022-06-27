@@ -15,7 +15,6 @@ const MedicationShow = (props) => {
                     <img src={medication.photoUrl} className="medication-show-image" />
                 </div>
                 <div className="medication-show-text">
-                    <div className="medication-show-seller">{medication.seller.username}</div>
                     <div className="medication-show-name">{medication.name}</div>
                     <div className="medication-show-price-container">
                     <div className="medication-show-price">{medication.price}</div>
