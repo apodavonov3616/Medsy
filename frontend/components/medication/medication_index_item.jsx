@@ -5,6 +5,8 @@ const MedicationIndexItem = (props) => {
 
     const { medication } = props
 
+    const deals = ["Limited Time Offer!", "Best Deal!", "Promotional Sale!", "High Quality!"]
+
     return (
         <div className="medication-container">
             {/* <Link to={`/medications/${medication.id}`} className="medication-show-link">
@@ -17,7 +19,7 @@ const MedicationIndexItem = (props) => {
                     </div>
                     <div className="medication-index-item-info">
                         <div className="medication-index-price">${medication.price}</div>
-                        <div className="limited-time-offer">Limited Time Offer!</div>
+                        <div className="limited-time-offer">{deals[Math.floor(Math.random() * deals.length)]}</div>
                     </div>
                 </Link>
             </li>
