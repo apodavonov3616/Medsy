@@ -30,7 +30,7 @@ medication1 = Medication.create(
     price: 7.99
 )
 
-photo1 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo1 = URI.open("https://medsy-seed.s3.amazonaws.com/med1.jpeg")
 medication1.photo.attach(io: photo1, filename:"photo1.jpg")
 
 medication2 = Medication.create(
@@ -42,7 +42,7 @@ medication2 = Medication.create(
     price: 9.99
 )
 
-photo2 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo2 = URI.open("https://medsy-seed.s3.amazonaws.com/med2.jpeg")
 medication2.photo.attach(io: photo2, filename:"photo2.jpg")
 
 
@@ -54,7 +54,7 @@ medication3 = Medication.create(
     description: "An NSAID which not only blocks pain signals but also targets areas of inflammation to reduce swelling, used for temporary relief of pain from migraines, headaches, menstrual cramps, and muscle aches.",
     price: 9.99
 )
-photo3 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo3 = URI.open("https://medsy-seed.s3.amazonaws.com/med3.jpg")
 medication3.photo.attach(io: photo3, filename:"photo3.jpg")
 
 
@@ -66,7 +66,7 @@ medication4 = Medication.create(
     description: "An NSAID which not only blocks pain signals but also targets areas of inflammation to reduce swelling, used for temporary relief of pain from migraines, headaches, menstrual cramps, and muscle aches.",
     price: 13.99
 )
-photo4 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo4 = URI.open("https://medsy-seed.s3.amazonaws.com/med4.jpg")
 medication4.photo.attach(io: photo4, filename:"photo4.jpg")
 
 
@@ -78,7 +78,7 @@ medication5 = Medication.create(
     description: "Analgesic which blocks the brain from receiving pain signals, Antipyretic which reduces fevers, used for relieving mild to moderate pain from headaches, migraines, colds, sore throats, and reduces fever.",
     price: 9.99
 )
-photo5 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo5 = URI.open("https://medsy-seed.s3.amazonaws.com/med5.webp")
 medication5.photo.attach(io: photo5, filename:"photo5.jpg")
 
 
@@ -90,7 +90,7 @@ medication6 = Medication.create(
     description: "Acetylsalicylic Acid/NSAID, known for broad range of pharmacologic activities such as have antipyretic, antiplatelet, and analgesic properties.",
     price: 11.99
 )
-photo6 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo6 = URI.open("https://medsy-seed.s3.amazonaws.com/med6.jpg")
 medication6.photo.attach(io: photo6, filename:"photo6.jpg")
 
 
@@ -102,7 +102,7 @@ medication7 = Medication.create(
     description: "An NSAID which not only blocks pain signals but also targets areas of inflammation to reduce swelling, used for temporary relief of pain from migraines, headaches, menstrual cramps, and muscle aches.",
     price: 11.99
 )
-photo7 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo7 = URI.open("https://medsy-seed.s3.amazonaws.com/med7.jpeg")
 medication7.photo.attach(io: photo7, filename:"photo7.jpg")
 
 
@@ -114,8 +114,8 @@ medication8 = Medication.create(
     description: "An NSAID topical. Used for reducing inflammation, pain, and stiffness in the specific areas in the body. Works by blocking the production of prostaglandins which cause pain.",
     price: 13.99
 )
-photo8 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication8.photo.attach(io: photo8, filename:"photo8.jpg")
+photo8 = URI.open("https://medsy-seed.s3.amazonaws.com/med8.webp")
+medication8.photo.attach(io: photo8, filename:"photo8.webp")
 
 
 medication9 = Medication.create(
@@ -126,7 +126,7 @@ medication9 = Medication.create(
     description: "An intermediate-acting synthetic insulin that has a slow release to last longer in the body when compared to regular human insulin to control blood sugar levels.",
     price: 79.99
 )
-photo9 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo9 = URI.open("https://medsy-seed.s3.amazonaws.com/med9.jpg")
 medication9.photo.attach(io: photo9, filename:"photo9.jpg")
 
 
@@ -138,7 +138,7 @@ medication10 = Medication.create(
     description: "A short-acting insulin that starts working in 30 minutes and lasts several hours to control blood sugar levels.",
     price: 59.99
 )
-photo10 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo10 = URI.open("https://medsy-seed.s3.amazonaws.com/med10.jpg")
 medication10.photo.attach(io: photo10, filename:"photo10.jpg")
 
 
@@ -150,7 +150,7 @@ medication11 = Medication.create(
     description: "An intermediate-acting synthetic insulin that has a slow release to last longer in the body when compared to regular human insulin to control blood sugar levels.",
     price: 59.99
 )
-photo11 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo11 = URI.open("https://medsy-seed.s3.amazonaws.com/med11.jpg")
 medication11.photo.attach(io: photo11, filename:"photo11.jpg")
 
 
@@ -162,8 +162,8 @@ medication12 = Medication.create(
     description: "A short-acting insulin that starts working in 30 minutes and lasts several hours to control blood sugar levels.",
     price: 59.99
 )
-photo12 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication12.photo.attach(io: photo12, filename:"photo12.jpg")
+photo12 = URI.open("https://medsy-seed.s3.amazonaws.com/med12.webp")
+medication12.photo.attach(io: photo12, filename:"photo12.webp")
 
 
 medication13 = Medication.create(
@@ -174,8 +174,8 @@ medication13 = Medication.create(
     description: "An intermediate-acting synthetic insulin that has a slow release to last longer in the body when compared to regular human insulin to control blood sugar levels.",
     price: 84.99
 )
-photo13 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication13.photo.attach(io: photo13, filename:"photo13.jpg")
+photo13 = URI.open("https://medsy-seed.s3.amazonaws.com/med13.jpeg")
+medication13.photo.attach(io: photo13, filename:"photo13.jpeg")
 
 
 medication14 = Medication.create(
@@ -186,8 +186,8 @@ medication14 = Medication.create(
     description: "Tablets that are fast-acting to replenish low blood sugar levels in the body to avoid risk of hypoglycemia.",
     price: 6.99
 )
-photo14 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication14.photo.attach(io: photo14, filename:"photo14.jpg")
+photo14 = URI.open("https://medsy-seed.s3.amazonaws.com/med14.jpeg")
+medication14.photo.attach(io: photo14, filename:"photo14.jpeg")
 
 
 medication15 = Medication.create(
@@ -198,7 +198,7 @@ medication15 = Medication.create(
     description: "Vitamin B6 has been studied and concluded to be associated with functions of the immune, nervous, and endocrine systems. Deficiency in this vitamin may result in neurological disorders, including seizures. It has been studied that vitamin B6 can help control seizures, more specifically, pyridoxine-dependent epilepsies.",
     price: 7.99
 )
-photo15 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo15 = URI.open("https://medsy-seed.s3.amazonaws.com/med15.jpg")
 medication15.photo.attach(io: photo15, filename:"photo15.jpg")
 
 
@@ -210,7 +210,7 @@ medication16 = Medication.create(
     description: "Vitamin B6 has been studied and concluded to be associated with functions of the immune, nervous, and endocrine systems. Deficiency in this vitamin may result in neurological disorders, including seizures. It has been studied that vitamin B6 can help control seizures, more specifically, pyridoxine-dependent epilepsies.",
     price: 32.99
 )
-photo16 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo16 = URI.open("https://medsy-seed.s3.amazonaws.com/med16.jpg")
 medication16.photo.attach(io: photo16, filename:"photo16.jpg")
 
 
@@ -222,7 +222,7 @@ medication17 = Medication.create(
     description: "Along with treating hypomagnesemia, these injections are used to prevent seizures in pregnant women with conditions including pre-eclampsia, eclampsia, or toxemia.",
     price: 39.99
 )
-photo17 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo17 = URI.open("https://medsy-seed.s3.amazonaws.com/med17.jpg")
 medication17.photo.attach(io: photo17, filename:"photo17.jpg")
 
 
@@ -234,7 +234,7 @@ medication18 = Medication.create(
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Used to treat gastric and duodenal ulcers, esophagitis, and gastroesophageal reflux disease.",
     price: 15.99
 )
-photo18 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo18 = URI.open("https://medsy-seed.s3.amazonaws.com/med18.jpg")
 medication18.photo.attach(io: photo18, filename:"photo18.jpg")
 
 
@@ -246,8 +246,8 @@ medication19 = Medication.create(
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Used to treat gastric and duodenal ulcers, esophagitis, and gastroesophageal reflux disease.",
     price: 9.99
 )
-photo19 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication19.photo.attach(io: photo19, filename:"photo19.jpg")
+photo19 = URI.open("https://medsy-seed.s3.amazonaws.com/med19.jpeg")
+medication19.photo.attach(io: photo19, filename:"photo19.jpeg")
 
 
 medication20 = Medication.create(
@@ -258,7 +258,7 @@ medication20 = Medication.create(
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Most commonly used to treat heartburn and prevent stomach acid from washing back into the esophagus.",
     price: 22.98
 )
-photo20 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo20 = URI.open("https://medsy-seed.s3.amazonaws.com/med20.jpg")
 medication20.photo.attach(io: photo20, filename:"photo20.jpg")
 
 
@@ -270,8 +270,8 @@ medication21 = Medication.create(
     description: "Histamine-2 blocker which works by blocking the amount of acid the stomach produces. Used to treat and prevent ulcers of the stomach and intestines, and heartburn.",
     price: 20.99
 )
-photo21 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication21.photo.attach(io: photo21, filename:"photo21.jpg")
+photo21 = URI.open("https://medsy-seed.s3.amazonaws.com/med21.jpeg")
+medication21.photo.attach(io: photo21, filename:"photo21.jpeg")
 
 
 medication22 = Medication.create(
@@ -282,8 +282,8 @@ medication22 = Medication.create(
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Used to treat gastric and duodenal ulcers, esophagitis, and gastroesophageal reflux disease.",
     price: 18.99
 )
-photo22 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication22.photo.attach(io: photo22, filename:"photo22.jpg")
+photo22 = URI.open("https://medsy-seed.s3.amazonaws.com/med22.png")
+medication22.photo.attach(io: photo22, filename:"photo22.png")
 
 
 medication23 = Medication.create(
@@ -294,7 +294,7 @@ medication23 = Medication.create(
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Most commonly used to treat heartburn and prevent stomach acid from washing back into the esophagus.",
     price: 19.99
 )
-photo23 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo23 = URI.open("https://medsy-seed.s3.amazonaws.com/med23.jpg")
 medication23.photo.attach(io: photo23, filename:"photo23.jpg")
 
 
@@ -306,8 +306,8 @@ medication24 = Medication.create(
     description: "An inorganic salt and antacid which is primarily used in the treatment and prevention of low calcium conditions like GERD.",
     price: 14.99
 )
-photo24 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication24.photo.attach(io: photo24, filename:"photo24.jpg")
+photo24 = URI.open("https://medsy-seed.s3.amazonaws.com/med24.png")
+medication24.photo.attach(io: photo24, filename:"photo24.png")
 
 
 medication25 = Medication.create(
@@ -318,8 +318,8 @@ medication25 = Medication.create(
     description: "An Antacid used to treat and relieve heartburn, sour stomach, acid reflux, indigestion, and upset stomach.",
     price: 7.98
 )
-photo25 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication25.photo.attach(io: photo25, filename:"photo25.jpg")
+photo25 = URI.open("https://medsy-seed.s3.amazonaws.com/med24.png")
+medication25.photo.attach(io: photo25, filename:"photo25.png")
 
 
 medication26 = Medication.create(
@@ -330,7 +330,7 @@ medication26 = Medication.create(
     description: "A topical antibiotic solution that works by killing bacteria that causes acne.",
     price: 13.99
 )
-photo26 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo26 = URI.open("https://medsy-seed.s3.amazonaws.com/med26.jpg")
 medication26.photo.attach(io: photo26, filename:"photo26.jpg")
 
 
@@ -342,7 +342,7 @@ medication27 = Medication.create(
     description: "A topical retinoid that works to prevent growth of cells on the skin along with decreasing swelling and inflammation.",
     price: 16.99
 )
-photo27 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo27 = URI.open("https://medsy-seed.s3.amazonaws.com/med27.jpg")
 medication27.photo.attach(io: photo27, filename:"photo27.jpg")
 
 
@@ -354,8 +354,8 @@ medication28 = Medication.create(
     description: "A topical keratolytic agent which is used to clear and prevent skin blemishes. Used to treat overgrowth of skin cells and help with with swelling and unplugging blocked pores.",
     price: 9.99
 )
-photo28 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication28.photo.attach(io: photo28, filename:"photo28.jpg")
+photo28 = URI.open("https://medsy-seed.s3.amazonaws.com/med28.png")
+medication28.photo.attach(io: photo28, filename:"photo28.png")
 
 
 medication29 = Medication.create(
@@ -366,7 +366,7 @@ medication29 = Medication.create(
     description: "A topical antibiotic solution that works by killing bacteria that causes acne.",
     price: 9.99
 )
-photo29 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo29 = URI.open("https://medsy-seed.s3.amazonaws.com/med29.jpg")
 medication29.photo.attach(io: photo29, filename:"photo29.jpg")
 
 
@@ -378,7 +378,7 @@ medication30 = Medication.create(
     description: "A tinted adult acne cream that clears up acne pimples and prevents new ones from forming. Also commonly used for Rosacea.",
     price: 14.99
 )
-photo30 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo30 = URI.open("https://medsy-seed.s3.amazonaws.com/med30.jpg")
 medication30.photo.attach(io: photo30, filename:"photo30.jpg")
 
 
@@ -390,8 +390,8 @@ medication31 = Medication.create(
     description: "A topical analgesic and skin protectant which is used to treat pain and itching caused my minor cuts, scrapes, skin irritations, acne, eczema and other skin disorders.",
     price: 12.49
 )
-photo31 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication31.photo.attach(io: photo31, filename:"photo31.jpg")
+photo31 = URI.open("https://medsy-seed.s3.amazonaws.com/med31.png")
+medication31.photo.attach(io: photo31, filename:"photo31.png")
 
 
 medication32 = Medication.create(
@@ -402,7 +402,7 @@ medication32 = Medication.create(
     description: "A salicylic acid and sulfar bar most commonly used for calluses, acne, and blemishes. Works by killing bacteria on the skin. Sulfur helps to dry out the skin's surface to help absorb excess oil and sebum that cause acne breakouts.",
     price: 5.99
 )
-photo32 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo32 = URI.open("https://medsy-seed.s3.amazonaws.com/med32.jpg")
 medication32.photo.attach(io: photo32, filename:"photo32.jpg")
 
 
@@ -414,8 +414,8 @@ medication33 = Medication.create(
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Commonly used to relieve runny nose, sneezing, hives, and watery eyes during allergy season.",
     price: 14.99
 )
-photo33 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication33.photo.attach(io: photo33, filename:"photo33.jpg")
+photo33 = URI.open("https://medsy-seed.s3.amazonaws.com/med33.webp")
+medication33.photo.attach(io: photo33, filename:"photo33.webp")
 
 
 medication34 = Medication.create(
@@ -426,7 +426,7 @@ medication34 = Medication.create(
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Commonly used to relieve symptoms of hay fever including allergy to dust and pollen. Also used to treat itching and redness caused by hives.",
     price: 14.99
 )
-photo34 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo34 = URI.open("https://medsy-seed.s3.amazonaws.com/med34.jpg")
 medication34.photo.attach(io: photo34, filename:"photo34.jpg")
 
 
@@ -438,8 +438,8 @@ medication35 = Medication.create(
     description: "An antihistamine which works by blcoking the substance in the body that causes allergic symptoms. Helps relieves symptoms of allergy, hay fever, and the common cold. Can be used as a short-term sedative/sleep aid during night-time.",
     price: 6.99
 )
-photo35 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication35.photo.attach(io: photo35, filename:"photo35.jpg")
+photo35 = URI.open("https://medsy-seed.s3.amazonaws.com/med35.webp")
+medication35.photo.attach(io: photo35, filename:"photo35.webp")
 
 
 medication36 = Medication.create(
@@ -450,7 +450,7 @@ medication36 = Medication.create(
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Commonly used to relieve runny nose, sneezing, hives, and watery eyes during allergy season.",
     price: 19.99
 )
-photo36 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo36 = URI.open("https://medsy-seed.s3.amazonaws.com/med36.jpg")
 medication36.photo.attach(io: photo36, filename:"photo36.jpg")
 
 
@@ -462,7 +462,7 @@ medication37 = Medication.create(
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Most commonly used for symptoms of hay fever, including allergies to pollen and dust, and conjunctivitis.",
     price: 25.99
 )
-photo37 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo37 = URI.open("https://medsy-seed.s3.amazonaws.com/med37.jpg")
 medication37.photo.attach(io: photo37, filename:"photo37.jpg")
 
 
@@ -474,8 +474,8 @@ medication38 = Medication.create(
     description: "An antihistamine nasal spray that is used to help relieve symptoms of runny, stuffy, or itchy nose, sneezing, and nasal drip.",
     price: 10.99
 )
-photo38 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
-medication38.photo.attach(io: photo38, filename:"photo38.jpg")
+photo38 = URI.open("https://medsy-seed.s3.amazonaws.com/med38.png")
+medication38.photo.attach(io: photo38, filename:"photo38.png")
 
 
 medication39 = Medication.create(
@@ -486,7 +486,7 @@ medication39 = Medication.create(
     description: "Antihistamine eye drops used to temporarily prevent itching of the eyes caused by animals, dust, or pollen.",
     price: 8.99
 )
-photo39 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
+photo39 = URI.open("https://medsy-seed.s3.amazonaws.com/med39.jpeg")
 medication39.photo.attach(io: photo39, filename:"photo39.jpg")
 
 
