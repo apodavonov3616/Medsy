@@ -27,6 +27,12 @@
         color: black;
     }
 }
+
+.medication-index-item:hover {
+    background-color: rgba(240, 248, 255, 0.445);
+    opacity: 0.5;
+}
+
 .limited-time-offer {
     font-size: 11px;
     font-weight: bold;
@@ -35,6 +41,15 @@
     padding-bottom: 3px;
     padding-left: 6px;
     padding-right: 6px;
-    border-radius: 40px;
-    background: #D4E9D7;
+    border-radius: 50px;
+    background: #3d137536;
+}
+
+.medication-index-price {
+    border-radius: 80px;
+}
+
+.medication-index-price:hover {
+    background-color: rgba(0, 255, 85, 0.247);
+    max-width: 50px;
 }
