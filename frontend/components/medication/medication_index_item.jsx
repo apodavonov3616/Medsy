@@ -5,7 +5,7 @@ const MedicationIndexItem = (props) => {
 
     const { medication } = props
 
-    const deals = ["Limited Time Offer!", "Best Deal!", "Promotional Sale!", "High Quality!"]
+    const deals = ["Limited Time Offer!", "Best Deal Today!", "Promotional Sale!", "High Quality Product!"]
 
     return (
         <div className="medication-container">
