@@ -72,14 +72,21 @@ class SessionForm extends React.Component {
             this.props.errors.map((error, i) => <p className="login-errors" key={i}>{error}</p>)
         )
 
-        let demoUser = (
-            <input
+        let demoUser = () => {
+            if (this.props.formType == "Sign In"){
+            return (
+                <>
+                <div>or</div>
+                <input
                 type="submit"
                 value="Log In as Demo User"
                 className="form-button"
                 onClick={this.demoUser}
-            />
-        );
+                />
+                </>
+                )
+            }
+        };
 
 
         return (
@@ -115,8 +122,7 @@ class SessionForm extends React.Component {
                             <input className="session-submit" type="submit" value={this.props.formType} />
                         </div>
                     </form>
-                    <div>or</div>
-                    {demoUser}
+                    {demoUser()}
                 </div>
                 <div></div>
             </div >
