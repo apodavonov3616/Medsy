@@ -229,10 +229,10 @@ medication17.photo.attach(io: photo17, filename:"photo17.jpg")
 medication18 = Medication.create(
     id: 18,
     seller_id: 1,
-    name: "Omeprazole 20mg (50 tablets)",
+    name: "Omeprazole 20mg (42 tablets)",
     category_name: "GERD",
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Used to treat gastric and duodenal ulcers, esophagitis, and gastroesophageal reflux disease.",
-    price: 18.99
+    price: 15.99
 )
 photo18 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication18.photo.attach(io: photo18, filename:"photo18.jpg")
@@ -253,10 +253,10 @@ medication19.photo.attach(io: photo19, filename:"photo19.jpg")
 medication20 = Medication.create(
     id: 20,
     seller_id: 1,
-    name: "Prilosec 20mg 50 tablets",
+    name: "Prilosec 20mg (42 tablets)",
     category_name: "GERD",
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Most commonly used to treat heartburn and prevent stomach acid from washing back into the esophagus.",
-    price: 21.49
+    price: 22.98
 )
 photo20 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication20.photo.attach(io: photo20, filename:"photo20.jpg")
@@ -277,7 +277,7 @@ medication21.photo.attach(io: photo21, filename:"photo21.jpg")
 medication22 = Medication.create(
     id: 22,
     seller_id: 1,
-    name: "Lansoprazole 30mg (50 tablets)",
+    name: "Lansoprazole 30mg (28 capsules)",
     category_name: "GERD",
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Used to treat gastric and duodenal ulcers, esophagitis, and gastroesophageal reflux disease.",
     price: 18.99
@@ -289,7 +289,7 @@ medication22.photo.attach(io: photo22, filename:"photo22.jpg")
 medication23 = Medication.create(
     id: 23,
     seller_id: 1,
-    name: "Esomeprazole Magnesium 40mg (50 tablets)",
+    name: "Esomeprazole Magnesium 40mg (100 tablets)",
     category_name: "GERD",
     description: "A Proton-Pump Inhibitor which works by decreasing the amount of acid made in the stomach. Most commonly used to treat heartburn and prevent stomach acid from washing back into the esophagus.",
     price: 19.99
@@ -313,10 +313,10 @@ medication24.photo.attach(io: photo24, filename:"photo24.jpg")
 medication25 = Medication.create(
     id: 25,
     seller_id: 1,
-    name: "Tums 200mg (100 chewable tablets)",
+    name: "Tums 1000mg (72 chewable tablets)",
     category_name: "GERD",
     description: "An Antacid used to treat and relieve heartburn, sour stomach, acid reflux, indigestion, and upset stomach.",
-    price: 7.99
+    price: 7.98
 )
 photo25 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication25.photo.attach(io: photo25, filename:"photo25.jpg")
@@ -349,7 +349,7 @@ medication27.photo.attach(io: photo27, filename:"photo27.jpg")
 medication28 = Medication.create(
     id: 28,
     seller_id: 1,
-    name: "Salicylic Acid 6% Wash (8 fl oz)",
+    name: "Salicylic Acid 6% Wash (6 fl oz)",
     category_name: "Acne",
     description: "A topical keratolytic agent which is used to clear and prevent skin blemishes. Used to treat overgrowth of skin cells and help with with swelling and unplugging blocked pores.",
     price: 9.99
@@ -361,7 +361,7 @@ medication28.photo.attach(io: photo28, filename:"photo28.jpg")
 medication29 = Medication.create(
     id: 29,
     seller_id: 1,
-    name: "PanOxyl 4% Wash (150mg)",
+    name: "PanOxyl 4% Wash (150g)",
     category_name: "Acne",
     description: "A topical antibiotic solution that works by killing bacteria that causes acne.",
     price: 9.99
@@ -373,7 +373,7 @@ medication29.photo.attach(io: photo29, filename:"photo29.jpg")
 medication30 = Medication.create(
     id: 30,
     seller_id: 1,
-    name: "Acnomel 10% Cream (1.3mg)",
+    name: "Acnomel 10% Cream (36g)",
     category_name: "Acne",
     description: "A tinted adult acne cream that clears up acne pimples and prevents new ones from forming. Also commonly used for Rosacea.",
     price: 14.99
@@ -385,7 +385,7 @@ medication30.photo.attach(io: photo30, filename:"photo30.jpg")
 medication31 = Medication.create(
     id: 31,
     seller_id: 1,
-    name: "Resinol 2% Cream (99.2g)",
+    name: "Resinol 2% Cream (85.1g)",
     category_name: "Acne",
     description: "A topical analgesic and skin protectant which is used to treat pain and itching caused my minor cuts, scrapes, skin irritations, acne, eczema and other skin disorders.",
     price: 12.49
@@ -421,7 +421,7 @@ medication33.photo.attach(io: photo33, filename:"photo33.jpg")
 medication34 = Medication.create(
     id: 34,
     seller_id: 1,
-    name: "Loratadine 10mg (80 tablets)",
+    name: "Loratadine 10mg (100 tablets)",
     category_name: "Allergies",
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Commonly used to relieve symptoms of hay fever including allergy to dust and pollen. Also used to treat itching and redness caused by hives.",
     price: 14.99
@@ -433,10 +433,10 @@ medication34.photo.attach(io: photo34, filename:"photo34.jpg")
 medication35 = Medication.create(
     id: 35,
     seller_id: 1,
-    name: "Doxylamine 25mg (100 tablets)",
+    name: "Doxylamine 25mg (32 tablets)",
     category_name: "Allergies",
     description: "An antihistamine which works by blcoking the substance in the body that causes allergic symptoms. Helps relieves symptoms of allergy, hay fever, and the common cold. Can be used as a short-term sedative/sleep aid during night-time.",
-    price: 9.99
+    price: 6.99
 )
 photo35 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication35.photo.attach(io: photo35, filename:"photo35.jpg")
@@ -457,10 +457,10 @@ medication36.photo.attach(io: photo36, filename:"photo36.jpg")
 medication37 = Medication.create(
     id: 37,
     seller_id: 1,
-    name: "Fexofenadine 30mg (30 tablets)",
+    name: "Fexofenadine 30mg (100 tablets)",
     category_name: "Allergies",
     description: "An antihistamine which works by blocking the substance in the body that causes allergic symptoms. Most commonly used for symptoms of hay fever, including allergies to pollen and dust, and conjunctivitis.",
-    price: 11.99
+    price: 25.99
 )
 photo37 = URI.open("https://medsy-seed.s3.amazonaws.com/ibuprofen.jpg")
 medication37.photo.attach(io: photo37, filename:"photo37.jpg")
