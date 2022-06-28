@@ -1,12 +1,8 @@
 class Api::MedicationsController < ApplicationController
 
     def index 
-        if params[:search]
-            @medications = Medication.all.select {|medication| medication.title.downcase.include?(params[:search].downcase)}
-        else 
-            @medications = Medication.all 
-        end
-        render :index 
+        @medications = Medication.with_attached_photo.all
+        render :index
     end
 
     def show 
