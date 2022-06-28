@@ -165,7 +165,7 @@ medication7 = Medication.create(
     description: "An NSAID which not only blocks pain signals but also targets areas of inflammation to reduce swelling, used for temporary relief of pain from migraines, headaches, menstrual cramps, and muscle aches.",
     price: 11.99
 )
-photo7 = URI.open("https://medsy-seed.s3.amazonaws.com/med7.jpeg")
+photo7 = URI.open("https://medsy-seed.s3.amazonaws.com/med7.jpg")
 medication7.photo.attach(io: photo7, filename:"photo7.jpg")
 
 
@@ -256,10 +256,10 @@ medication14.photo.attach(io: photo14, filename:"photo14.jpeg")
 medication15 = Medication.create(
     id: 15,
     seller_id: 6,
-    name: "Vitamin B6 100mg (100 count)",
+    name: "Vitamin B6 100mg (250 count)",
     category_name: "Seizure/Convulsions",
     description: "Vitamin B6 has been studied and concluded to be associated with functions of the immune, nervous, and endocrine systems. Deficiency in this vitamin may result in neurological disorders, including seizures. It has been studied that vitamin B6 can help control seizures, more specifically, pyridoxine-dependent epilepsies.",
-    price: 7.99
+    price: 12.99
 )
 photo15 = URI.open("https://medsy-seed.s3.amazonaws.com/med15.jpg")
 medication15.photo.attach(io: photo15, filename:"photo15.jpg")
