@@ -23,9 +23,9 @@
 .medication-index-item-info {
     flex-direction: row;
     box-sizing: border-box;
-    div {
-        color: black;
-    }
+    // div {
+    //     color: #2700ff;
+    // }
 }
 
 .medication-index-item:hover {
@@ -34,19 +34,24 @@
 }
 
 .limited-time-offer {
-    font-size: 11px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
     font-weight: bold;
-    min-width: 17px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
+    transform: rotate(45deg) translateX(-25%);
+    position: relative;
+    top: -170px;
+    left: 200px;
+    // padding-top: 3px;
+    // padding-bottom: 3px;
+    // padding-left: 6px;
+    // padding-right: 6px;
     border-radius: 50px;
-    background: #3d137536;
 }
 
 .medication-index-price {
     border-radius: 80px;
+    color: black;
 }
 
 .medication-index-price:hover {
