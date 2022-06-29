@@ -28,51 +28,46 @@ class CategoriesOptions extends React.Component {
         return (
 
             <div className="temporary-category-container">
-                {/* <form onSubmit={this.handleSubmit} className="category-form">
-                    <div className="category-input-container">
-                        <input type="text"
-                            placeholder= "..."
-                            value={this.state.category}
-                            onChange={this.update}
-                            className="category-input"/>
-                    </div>
-                </form> */}
-                
+
+                <div one-category-container>
                 <button
                 value="Diabetes"
                 onClick={this.handleSubmit}
-                className="category-input"
-                background="https://th.bing.com/th/id/OIP.OF59vsDmwxPP1tw7b_8clQHaE8?pid=ImgDet&rs=1">
-                    Diabetes
+                className="diabetes-button">
                 </button>
+                <div className="category-label">
+                    Diabetes
+                </div>
+                </div>
+
+
                 <button
                 value="Migraine"
                 onClick={this.handleSubmit}
-                className="category-input">
-                    Migraine/Headache
+                className="migrane-button">
                 </button>
                 <button
                 value="Seizure"
                 onClick={this.handleSubmit}
-                className="category-input">
+                className="seizure-button">
                     Seizure/Convulsions
                 </button>
                 <button
                 value="GERD"
                 onClick={this.handleSubmit}
-                className="category-input">
+                className="gerd-button">
                     GERD
                 </button>
                 <button
                 value="Acne"
                 onClick={this.handleSubmit}
-                className="category-input">
+                className="acne-button">
                     Acne
                 </button>
                 <button
                 value="Allergies"
                 onClick={this.handleSubmit}
-                className="category-input">
+                className="allergies-button">
                     Allergies
                 </button>
 

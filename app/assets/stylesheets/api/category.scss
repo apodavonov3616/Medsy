@@ -3,6 +3,40 @@
     justify-content: space-around;
 }
 
-// .temporary-category-container button {
+.diabetes-button {
+    z-index: 20;
+    height: 80px;
+    width: 210px;
+    z-index: 1;
+    border-radius: 50px;
+    background-size: 170px;
+    background-position: center;
+    // background-image: url("https://www.homage.sg/wp-content/uploads/2021/02/bigstock-Word-Diabetes-And-Diabetic-Acc-361734181.jpg");
+    background-color: rgb(127, 127, 185);
+}
 
-// }
+.diabetes-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
+
+.category-label {
+    position: relative;
+    left: 30px;
+}
+
+.migrane-button {
+    z-index: 20;
+    height: 60px;
+    width: 120px;
+    z-index: 1;
+    border-radius: 50px;
+    background-size: 170px;
+    background-position: center;
+    background-image: url("https://www.homage.sg/wp-content/uploads/2021/02/bigstock-Word-Diabetes-And-Diabetic-Acc-361734181.jpg");
+}
+
+.migrane-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
