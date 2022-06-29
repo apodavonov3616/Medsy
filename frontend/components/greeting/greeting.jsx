@@ -31,7 +31,7 @@ const Greeting = (props) => {
 
     return <div>
         {display}
-        <SearchBar/> 
+        {/* <SearchBar/>  */}
     </div>
 };
 
