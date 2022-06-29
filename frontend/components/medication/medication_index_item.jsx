@@ -1,11 +1,18 @@
-import React from 'react';
+ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MedicationIndexItem = (props) => {
 
     const { medication } = props
 
-    const deals = ["Limited Time Offer!", "Best Deal Today!", "Promotional Sale!", "High Quality Product!"]
+    const deals = (medicationId) => {
+        const deal = ["10% off Shipping", "BOGO 50% off"];
+        if ( medicationId % 6 === 0) {
+            return deal[1]
+         } else {
+            return deal[0]
+        }
+    }
 
     return (
         <div className="medication-container">
@@ -19,7 +26,7 @@ const MedicationIndexItem = (props) => {
                     </div>
                     <div className="medication-index-item-info">
                         <div className="medication-index-price">${medication.price}</div>
-                        <div className="limited-time-offer">{deals[Math.floor(Math.random() * deals.length)]}</div>
+                        <div className="limited-time-offer">{deals(medication.id)}</div>
                     </div>
                 </Link>
             </li>

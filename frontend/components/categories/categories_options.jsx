@@ -37,10 +37,12 @@ class CategoriesOptions extends React.Component {
                             className="category-input"/>
                     </div>
                 </form> */}
+                
                 <button
                 value="Diabetes"
                 onClick={this.handleSubmit}
-                className="category-input">
+                className="category-input"
+                background="https://th.bing.com/th/id/OIP.OF59vsDmwxPP1tw7b_8clQHaE8?pid=ImgDet&rs=1">
                     Diabetes
                 </button>
                 <button
