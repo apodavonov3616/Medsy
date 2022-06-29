@@ -10,6 +10,8 @@ import MedicationShowContainer from "./medication/medication_show_container";
 import MedicationIndexContainer from './medication/medication_index_container';
 import SearchShow from "./../components/greeting/search/search_show";
 import SearchBar from "./greeting/search/search_bar";
+import CategoriesContainer from "./categories/categories_container";
+import CategoriesOptions from "./categories/categories_options";
 
 
 
@@ -23,12 +25,17 @@ const App = () => (
             <GreetingContainer />
             <ModalContainer />
         </header>
-
+        <br />
+        <br />
+        <CategoriesOptions/>
+        <br />
+        <br />
         <Switch>
             <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
             <Route exact path="/" component={MedicationIndexContainer} />
             <Route exact path="/search" component={MedicationIndexContainer} />
             <Route exact path="/search/:searched" component={SearchShow} /> 
+            <Route exact path="/category/:category" component={CategoriesContainer} /> 
         </Switch>
     </div>
 );
