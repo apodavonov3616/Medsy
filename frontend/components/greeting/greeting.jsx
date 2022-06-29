@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from './search/search_bar';
 
 const Greeting = (props) => {
 
@@ -30,6 +31,7 @@ const Greeting = (props) => {
 
     return <div>
         {display}
+        <SearchBar/> 
     </div>
 };
 

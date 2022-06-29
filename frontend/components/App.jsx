@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import ModalContainer from './modal/modal_container';
 import MedicationShowContainer from "./medication/medication_show_container";
 import MedicationIndexContainer from './medication/medication_index_container';
+import SearchShow from "./../components/greeting/search/search_show";
+
 
 
 
@@ -24,6 +26,8 @@ const App = () => (
         <Switch>
             <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
             <Route exact path="/" component={MedicationIndexContainer} />
+            <Route exact path="/search" component={GreetingContainer} />
+            <Route exact path="/search/:searched" component={SearchShow} /> 
         </Switch>
     </div>
 );
