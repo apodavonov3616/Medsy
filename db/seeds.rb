@@ -23,66 +23,67 @@ demo = User.create(
 )
 user2 = User.create(
     id: 3,
-    username: 'Alan N',
-    email: 'AlanNg@AlanNg.com',
+    username: 'Dale F',
+    email: 'DaleFritz@DaleFritz.com',
     password: "password"
 )
-
+ 
 user3 = User.create(
     id: 4,
-    username: 'David Z',
-    email: 'DavidZheng@DavidZheng.com',
+    username: 'Ronald S',
+    email: 'RonaldS@RonaldS.com',
     password: "password"
 )
-
+ 
 user4 = User.create(
     id: 5,
-    username: 'David-Allen A',
-    email: 'David-AllenAsencio@David-AllenAsencio.com',
+    username: 'Cameron V',
+    email: 'cameronv@cameronv.com',
     password: "password"
 )
-
+ 
 user5 = User.create(
     id: 6,
-    username: 'Duncan M',
-    email: 'DuncanMurchison@DuncanMurchison.com',
+    username: 'Linda H',
+    email: 'LindaH@LindaH.com',
     password: "password"
 )
-
+ 
 user6 = User.create(
     id: 7,
-    username: 'Evan F',
-    email: 'EvanFrommer@EvanFrommer.com',
+    username: 'Harold M',
+    email: 'HaroldMr@EHaroldM.com',
     password: "password"
 )
-
+ 
 user7 = User.create(
     id: 8,
-    username: 'Lin S',
-    email: 'LinShen@LinShen.com',
+    username: 'Bethany P',
+    email: 'BethanyP@BethanyP.com',
     password: "password"
 )
-
+ 
 user8 = User.create(
     id: 9,
-    username: 'Naran I',
-    email: 'naran@naran.com',
+    username: 'Brooke B',
+    email: 'BrookeB@BrookeB.com',
     password: "password"
 )
-
+ 
 user9 = User.create(
     id: 10,
-    username: 'Tom L',
-    email: 'tom@tom.com',
+    username: 'Patti E',
+    email: 'PattiE@PattiE.com',
+    password: "password"
+)
+ 
+user10 = User.create(
+    id: 11,
+    username: 'Scott W',
+    email: 'ScottW@ScottW.com',
     password: "password"
 )
 
-user10 = User.create(
-    id: 11,
-    username: 'Michael R',
-    email: 'michael@micharl.com',
-    password: "password"
-)
 
 
 medication1 = Medication.create(
@@ -238,7 +239,7 @@ medication13 = Medication.create(
     description: "An intermediate-acting synthetic insulin that has a slow release to last longer in the body when compared to regular human insulin to control blood sugar levels.",
     price: 84.99
 )
-photo13 = URI.open("https://medsy-seed.s3.amazonaws.com/med13.jpeg")
+photo13 = URI.open("https://medsy-seed.s3.amazonaws.com/med13.jpg")
 medication13.photo.attach(io: photo13, filename:"photo13.jpeg")
 
 
@@ -382,8 +383,8 @@ medication25 = Medication.create(
     description: "An Antacid used to treat and relieve heartburn, sour stomach, acid reflux, indigestion, and upset stomach.",
     price: 7.98
 )
-photo25 = URI.open("https://medsy-seed.s3.amazonaws.com/med24.png")
-medication25.photo.attach(io: photo25, filename:"photo25.png")
+photo25 = URI.open("https://medsy-seed.s3.amazonaws.com/med25.jpeg")
+medication25.photo.attach(io: photo25, filename:"photo25.jpeg")
 
 
 medication26 = Medication.create(
@@ -551,7 +552,7 @@ medication39 = Medication.create(
     price: 8.99
 )
 photo39 = URI.open("https://medsy-seed.s3.amazonaws.com/med39.jpeg")
-medication39.photo.attach(io: photo39, filename:"photo39.jpg")
+medication39.photo.attach(io: photo39, filename:"photo39.jpeg")
 
 
 
