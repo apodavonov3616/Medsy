@@ -11,6 +11,9 @@ const MedicationIndex = (props) => {
 
     return (
         <>
+            <div className="index-quota">When you're out of sick days, we got you covered!</div>
+            <br />
+            <br />
             <div className="medication-index">
                 {
                     medications.map(medication => {

@@ -18,6 +18,11 @@ const SearchShow = (props) => {
         })
     };
 
+    // const clearSearch = () => {
+    //     let input = document.getElementsByClassName('search-input')
+    //     input.value = ""
+    // }
+
     return (
         <div className="search-result-container">
             <ul className="search-result">

@@ -38,10 +38,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
     font-weight: bold;
-    transform: rotate(45deg) translateX(-25%);
+    transform: rotate(-35deg) translateX(-25%);
     position: relative;
-    top: -170px;
-    left: 200px;
+    top: -370px;
+    left: 30px;
     // padding-top: 3px;
     // padding-bottom: 3px;
     // padding-left: 6px;
@@ -57,4 +57,10 @@
 .medication-index-price:hover {
     background-color: rgba(0, 255, 85, 0.247);
     max-width: 50px;
+}
+
+.medication-index {
+display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
 }
