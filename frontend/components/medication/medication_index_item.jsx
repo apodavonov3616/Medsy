@@ -14,8 +14,14 @@ const MedicationIndexItem = (props) => {
         }
     }
 
+    
+    const clearSearch = () => {
+        let input = document.getElementsByClassName('search-input')
+        input.value = ""
+    }
+
     return (
-        <div className="medication-container">
+        <div className="medication-container" onClick={clearSearch()}>
             {/* <Link to={`/medications/${medication.id}`} className="medication-show-link">
                 <div>{medication.name}</div>            
             </Link> */}

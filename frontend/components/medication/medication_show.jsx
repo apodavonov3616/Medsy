@@ -23,6 +23,7 @@ const MedicationShow = (props) => {
     if (!medication) return null
     return (
         <div className="medication-show-page">
+            <div className="index-quota">Great Choice of Medication!</div>
             <div className="medication-show-info">
                 <div className="medication-image-container">
                     <img src={medication.photoUrl} className="medication-show-image" />
@@ -36,7 +37,9 @@ const MedicationShow = (props) => {
                     <div className="medication-show-description">{medication.description}</div>
                     <br />
                     <br />
-                    <button className="add-cart-button">Add to cart</button>
+                    <form action="https://c.tenor.com/h5qs19y2WxMAAAAC/rickroll-lyrics.gif">  
+                        <button className="add-cart-button">Add to cart</button>
+                    </form>
                     <div selling-fast>
                         <img src="https://medsy-seed.s3.amazonaws.com/hourglass.png" alt="hourglass" className="hourglass-image"/>
                         <div>Selling fast! Only {randomNumber(2,10)} left, and {randomNumber(10,20)} people have it in their carts.</div>
