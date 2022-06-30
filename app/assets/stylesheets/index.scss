@@ -59,3 +59,8 @@
     max-width: 50px;
 }
 
+.medication-index {
+display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
