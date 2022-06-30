@@ -5,14 +5,13 @@
 
 .diabetes-button {
     z-index: 20;
-    height: 80px;
-    width: 210px;
+    height: 100px;
+    width: 100px;
     z-index: 1;
-    border-radius: 50px;
+    border-radius: 100px;
     background-size: 170px;
     background-position: center;
-    // background-image: url("https://www.homage.sg/wp-content/uploads/2021/02/bigstock-Word-Diabetes-And-Diabetic-Acc-361734181.jpg");
-    background-color: rgb(127, 127, 185);
+    background-image: url("https://medsy-seed.s3.amazonaws.com/diabetes_real.jpg");
 }
 
 .diabetes-button:hover {
@@ -20,23 +19,125 @@
     cursor:cell
 }
 
-.category-label {
+.diabetes-category-label {
     position: relative;
-    left: 30px;
+    left: 24px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
 }
 
 .migrane-button {
     z-index: 20;
-    height: 60px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     z-index: 1;
-    border-radius: 50px;
-    background-size: 170px;
+    border-radius: 100px;
+    background-size: 110px;
     background-position: center;
-    background-image: url("https://www.homage.sg/wp-content/uploads/2021/02/bigstock-Word-Diabetes-And-Diabetic-Acc-361734181.jpg");
+    background-image: url("https://medsy-seed.s3.amazonaws.com/headache.png");
 }
 
 .migrane-button:hover {
     transform: scale(1.2);
     cursor:cell
+}
+
+.migrane-category-label {
+    position: relative;
+    left: 24px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+.seizure-button {
+    z-index: 20;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    border-radius: 100px;
+    background-size: 110px;
+    background-position: center;
+    background-image: url("https://medsy-seed.s3.amazonaws.com/light-bulb.jpg");
+    background-color: blue;
+}
+
+.seizure-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
+
+.seizure-category-label {
+    position: relative;
+    left: 25px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+.GERD-button {
+    z-index: 20;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    border-radius: 100px;
+    background-size: 105px;
+    background-position: center;
+    background-image: url("https://medsy-seed.s3.amazonaws.com/gerd_3.jpg");
+}
+
+.GERD-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
+
+.GERD-category-label {
+    position: relative;
+    left: 34px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+.acne-button {
+    z-index: 20;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    border-radius: 100px;
+    background-size: 110px;
+    background-position: center;
+    background-image: url("https://medsy-seed.s3.amazonaws.com/acne.png");
+}
+
+.acne-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
+
+.acne-category-label {
+    position: relative;
+    left: 34px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+.allergies-button {
+    z-index: 20;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    border-radius: 100px;
+    background-size: 100px;
+    background-position: center;
+    background-image: url("https://medsy-seed.s3.amazonaws.com/Allergies.png");
+}
+
+.allergies-button:hover {
+    transform: scale(1.2);
+    cursor:cell
+}
+
+.allergies-category-label {
+    position: relative;
+    left: 24px;
+    top: 10px;
+    font-family: 'Trebuchet MS';
 }

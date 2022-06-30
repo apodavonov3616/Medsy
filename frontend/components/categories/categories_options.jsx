@@ -30,47 +30,70 @@ class CategoriesOptions extends React.Component {
             <div className="temporary-category-container">
 
                 <div one-category-container>
-                <button
-                value="Diabetes"
-                onClick={this.handleSubmit}
-                className="diabetes-button">
-                </button>
-                <div className="category-label">
-                    Diabetes
+                    <button
+                        value="Diabetes"
+                        onClick={this.handleSubmit}
+                        className="diabetes-button">
+                    </button>
+                    <div className="diabetes-category-label">
+                        Diabetes
+                    </div>
                 </div>
+
+                <div one-category-container>
+                    <button
+                        value="Migrane"
+                        onClick={this.handleSubmit}
+                        className="migrane-button">
+                    </button>
+                    <div className="migrane-category-label">
+                        Migrane
+                    </div>
                 </div>
 
+                <div one-category-container>
+                    <button
+                        value="Seizure"
+                        onClick={this.handleSubmit}
+                        className="seizure-button">
+                    </button>
+                    <div className="seizure-category-label">
+                        Seizure
+                    </div>
+                </div>
 
-                <button
-                value="Migraine"
-                onClick={this.handleSubmit}
-                className="migrane-button">
-                </button>
-                <button
-                value="Seizure"
-                onClick={this.handleSubmit}
-                className="seizure-button">
-                    Seizure/Convulsions
-                </button>
-                <button
-                value="GERD"
-                onClick={this.handleSubmit}
-                className="gerd-button">
-                    GERD
-                </button>
-                <button
-                value="Acne"
-                onClick={this.handleSubmit}
-                className="acne-button">
-                    Acne
-                </button>
-                <button
-                value="Allergies"
-                onClick={this.handleSubmit}
-                className="allergies-button">
-                    Allergies
-                </button>
+                <div one-category-container>
+                    <button
+                        value="GERD"
+                        onClick={this.handleSubmit}
+                        className="GERD-button">
+                    </button>
+                    <div className="GERD-category-label">
+                        GERD
+                    </div>
+                </div>
 
+                <div one-category-container>
+                    <button
+                        value="Acne"
+                        onClick={this.handleSubmit}
+                        className="acne-button">
+                    </button>
+                    <div className="acne-category-label">
+                        Acne
+                    </div>
+                </div>
+                
+                <div one-category-container>
+                    <button
+                        value="Allergies"
+                        onClick={this.handleSubmit}
+                        className="allergies-button">
+                    </button>
+                    <div className="allergies-category-label">
+                        Allergies
+                    </div>
+                </div>
             </div>
         )
     }
