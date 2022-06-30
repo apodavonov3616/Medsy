@@ -28,7 +28,7 @@ class CategoriesOptions extends React.Component {
         return (
 
             <div className="temporary-category-container">
-
+                
                 <div one-category-container>
                     <button
                         value="Diabetes"
@@ -42,12 +42,12 @@ class CategoriesOptions extends React.Component {
 
                 <div one-category-container>
                     <button
-                        value="Migrane"
+                        value="Migraine"
                         onClick={this.handleSubmit}
                         className="migrane-button">
                     </button>
                     <div className="migrane-category-label">
-                        Migrane
+                        Migraine
                     </div>
                 </div>
 

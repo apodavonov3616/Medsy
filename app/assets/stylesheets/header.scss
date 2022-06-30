@@ -17,11 +17,64 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .temporary-search-container {
     height: 60px;
     width: 80%;
-    background-color: rgb(175, 158, 158);
 }
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.header-rectangle {
+    background-color: rgb(252, 212, 140);
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    z-index: -10;
+}
+
+.search-bar-button {
+    height: 44px;
+    width: 40px;
+    z-index: 1;
+    border-radius: 0 30px 30px 0;
+    background-size: 67px;
+    background-position: center;
+    background-image: url("https://medsy-seed.s3.amazonaws.com/search_3.webp");
+    border: 1px solid black;
+    // position: relative;
+    // top: 16px;
+}
+
+.search-bar-button:hover {
+    cursor:pointer;
+}
+
+.search-input {
+    height: 40px;
+    width: 90%;
+    z-index: 5;
+    border-radius: 30px 0 0 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.search-input-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+// .greeting-container {
+//     display: flex;
+//     align-items: center;
+// }

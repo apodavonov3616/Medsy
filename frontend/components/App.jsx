@@ -20,14 +20,16 @@ import CategoriesOptions from "./categories/categories_options";
 const App = () => (
     <div>
         <header>
-            <Link to="/" className="title">Medsy</Link>
+            <Link to="/" className="title header-element">Medsy</Link>
             <SearchBar/> 
             <GreetingContainer />
             <ModalContainer />
         </header>
-        <br />
+        <div className="header-rectangle"></div>
         <br />
         <CategoriesOptions/>
+        <br />
+        <br />
         <br />
         <br />
         <Switch>

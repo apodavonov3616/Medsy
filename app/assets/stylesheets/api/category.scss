@@ -141,3 +141,9 @@
     top: 10px;
     font-family: 'Trebuchet MS';
 }
+
+.category-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
