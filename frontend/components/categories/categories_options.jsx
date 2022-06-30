@@ -28,52 +28,72 @@ class CategoriesOptions extends React.Component {
         return (
 
             <div className="temporary-category-container">
-                {/* <form onSubmit={this.handleSubmit} className="category-form">
-                    <div className="category-input-container">
-                        <input type="text"
-                            placeholder= "..."
-                            value={this.state.category}
-                            onChange={this.update}
-                            className="category-input"/>
-                    </div>
-                </form> */}
-                <button
-                value="Diabetes"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    Diabetes
-                </button>
-                <button
-                value="Migraine"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    Migraine/Headache
-                </button>
-                <button
-                value="Seizure"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    Seizure/Convulsions
-                </button>
-                <button
-                value="GERD"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    GERD
-                </button>
-                <button
-                value="Acne"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    Acne
-                </button>
-                <button
-                value="Allergies"
-                onClick={this.handleSubmit}
-                className="category-input">
-                    Allergies
-                </button>
 
+                <div one-category-container>
+                    <button
+                        value="Diabetes"
+                        onClick={this.handleSubmit}
+                        className="diabetes-button">
+                    </button>
+                    <div className="diabetes-category-label">
+                        Diabetes
+                    </div>
+                </div>
+
+                <div one-category-container>
+                    <button
+                        value="Migrane"
+                        onClick={this.handleSubmit}
+                        className="migrane-button">
+                    </button>
+                    <div className="migrane-category-label">
+                        Migrane
+                    </div>
+                </div>
+
+                <div one-category-container>
+                    <button
+                        value="Seizure"
+                        onClick={this.handleSubmit}
+                        className="seizure-button">
+                    </button>
+                    <div className="seizure-category-label">
+                        Seizure
+                    </div>
+                </div>
+
+                <div one-category-container>
+                    <button
+                        value="GERD"
+                        onClick={this.handleSubmit}
+                        className="GERD-button">
+                    </button>
+                    <div className="GERD-category-label">
+                        GERD
+                    </div>
+                </div>
+
+                <div one-category-container>
+                    <button
+                        value="Acne"
+                        onClick={this.handleSubmit}
+                        className="acne-button">
+                    </button>
+                    <div className="acne-category-label">
+                        Acne
+                    </div>
+                </div>
+                
+                <div one-category-container>
+                    <button
+                        value="Allergies"
+                        onClick={this.handleSubmit}
+                        className="allergies-button">
+                    </button>
+                    <div className="allergies-category-label">
+                        Allergies
+                    </div>
+                </div>
             </div>
         )
     }
