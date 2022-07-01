@@ -48,6 +48,8 @@ class SessionForm extends React.Component {
         const signingUp = () => {
             if (this.props.formType === 'Register') {
                 return (
+                    <div>
+                    <br />
                     <label className="username-password-input">Email
                         <input
                             type="text"
@@ -55,6 +57,7 @@ class SessionForm extends React.Component {
                             onChange={this.update('email')} 
                             className="login-input"/>
                     </label>
+                    </div>
                 );
             }
         };
@@ -127,8 +130,10 @@ class SessionForm extends React.Component {
                                     className="login-input"
                                 />
                             </label>
-                            <br />
                             {signingUp()}
+                            <br />
+                            <input type="checkbox" name="Stay Signed In" id="stay-signed-in" />
+                            <label for="stay-signed-in">Stay Signed In</label>
                             <br />
                             <br />
                             <label className="login-register-button">
