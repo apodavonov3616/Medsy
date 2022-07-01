@@ -15,7 +15,7 @@ const MedicationShow = (props) => {
         let year = d.getFullYear();
         let month = d.getMonth();
         let day = d.getDate();
-        return month.toString() + "/" + (day+1).toString() + "/" +year.toString()
+        return (month+1).toString() + "/" + (day+1).toString() + "/" +year.toString()
     }
 
     const { medication } = props
