@@ -39,7 +39,7 @@ const App = () => (
             <Route exact path="/search/:searched" component={SearchShow} /> 
             <Route exact path="/category/:category" component={CategoriesContainer} /> 
         </Switch>
-        {/* <div className="bottom-page-rectangle"></div> */}
+        {/* <BottomPage/> */}
     </div>
 );
 

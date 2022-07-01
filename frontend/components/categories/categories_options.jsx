@@ -29,7 +29,7 @@ class CategoriesOptions extends React.Component {
 
             <div className="temporary-category-container">
                 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="Diabetes"
                         onClick={this.handleSubmit}
@@ -40,7 +40,7 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="Migraine"
                         onClick={this.handleSubmit}
@@ -51,7 +51,7 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="Seizure"
                         onClick={this.handleSubmit}
@@ -62,7 +62,7 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="GERD"
                         onClick={this.handleSubmit}
@@ -73,7 +73,7 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="Acne"
                         onClick={this.handleSubmit}
@@ -84,7 +84,7 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
                 
-                <div one-category-container>
+                <div className="one-category-container">
                     <button
                         value="Allergies"
                         onClick={this.handleSubmit}

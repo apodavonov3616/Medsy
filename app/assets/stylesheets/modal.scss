@@ -13,8 +13,8 @@
 
 .modal-child {
     background-color: white;
-    height: 700px;
-    width: 350px;
+    height: 750px;
+    width: 360px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -22,3 +22,21 @@
     display: flex;
     border-radius: 20px;
 }
+
+.sign-in-v-register {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-form-container {
+    height: 650px;
+}
+
+.login-register-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+

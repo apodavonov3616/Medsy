@@ -16,7 +16,7 @@ const Greeting = (props) => {
     const display = currentUser ? (
         <div className="greeting">
             <p>Hello, {currentUser.username}</p>
-            <button onClick={logout}>Log Out</button>
+            <button onClick={logout} className="logout-button">Log Out</button>
         </div>
     ) : (
         <div className="greeting">
