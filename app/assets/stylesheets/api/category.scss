@@ -147,3 +147,21 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.category-rhyme-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -250px;
+}
+
+.rhyme-button {
+    font-size: 15px;
+    font-family: cursive;
+    background-color: white;
+    border: none
+}
+
+.rhyme-button:hover {
+    cursor:grab
+}
