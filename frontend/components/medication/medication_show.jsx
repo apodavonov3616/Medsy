@@ -10,14 +10,13 @@ const MedicationShow = (props) => {
         return Math.floor(Math.random() * (max - min + 1) + min)
     }
 
-    // const dateFunction = () => {
-    //     const d = new Date();
-    //     let year = d.getFullYear();
-    //     let month = d.getMonth();
-    //     let day = d.getDate();
-    //     return month
-    //     // .toString() + "/" + (day).toString() + "/" +year.toString()
-    // }
+    const dateFunction = () => {
+        const d = new Date();
+        let year = d.getFullYear();
+        let month = d.getMonth();
+        let day = d.getDate();
+        return month.toString() + "/" + (day+1).toString() + "/" +year.toString()
+    }
 
     const { medication } = props
     if (!medication) return null
@@ -46,7 +45,8 @@ const MedicationShow = (props) => {
                     </div>
                     <div delivery>
                         <img src="https://medsy-seed.s3.amazonaws.com/truck_2.jpg" alt="truck" className="truck-image"/>
-                        <div>Get it today with our same-day delivery</div>
+                        {/* <div>Get it today with our same-day delivery</div> */}
+                        <div>Get it tomorrow on {dateFunction()} with our expedited service</div>
                     </div>
                 </div>
             </div>
