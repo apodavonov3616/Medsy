@@ -31,7 +31,7 @@ const MedicationShow = (props) => {
                     <div className="medication-show-seller">{medication.seller.username}</div>
                     <div className="medication-show-name">{medication.name}</div>
                     <div className="medication-show-price-container">
-                    <div className="medication-show-price">{medication.price}</div>
+                    <div className="medication-show-price">${medication.price}</div>
                     </div>
                     <div className="medication-show-description">{medication.description}</div>
                     <br />
