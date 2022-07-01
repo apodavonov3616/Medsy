@@ -48,11 +48,12 @@ class SessionForm extends React.Component {
         const signingUp = () => {
             if (this.props.formType === 'Register') {
                 return (
-                    <label>Email
+                    <label className="username-password-input">Email
                         <input
                             type="text"
                             value={this.state.email}
-                            onChange={this.update('email')} />
+                            onChange={this.update('email')} 
+                            className="login-input"/>
                     </label>
                 );
             }
@@ -77,15 +78,21 @@ class SessionForm extends React.Component {
         let demoUser = () => {
             if (this.props.formType == "Sign In"){
             return (
-                <>
-                <div>or</div>
-                <input
-                type="submit"
-                value="Log In as Demo User"
-                className="form-button"
-                onClick={this.demoUser}
-                />
-                </>
+                <div>
+                    <span className="or">OR</span>
+                    <br />
+                    <br />
+                    <div className="login-register-button">
+                        <br />
+                        <br />
+                        <input
+                        type="submit"
+                        value="Log In as Demo User"
+                        className="form-button"
+                        onClick={this.demoUser}
+                        />
+                    </div>
+                </div>
                 )
             }
         };
@@ -94,15 +101,18 @@ class SessionForm extends React.Component {
         return (
             < div className="login-form-container" >
                 <span className="modal-close" onClick={this.closeModal}>&times;</span>
-                <br />
-                <div className="form-welcome">Welcome to Medsy!</div>
+                {/* <br /> */}
+                {/* <div className="form-welcome">Welcome to Medsy!</div> */}
                 <div className='form'>
                     <div className="error">{this.errors()}</div>
-                    <div> Please {this.props.formType} or {otherForm()}</div>
+                    <span className="sign-in-v-register"> 
+                        <div>{this.props.formType}</div>
+                        <div>{otherForm()}</div>
+                    </span>
                     <form onSubmit={this.handleSubmit} className="login-form-box">
                         <div className="login-form">
                             <br />
-                            <label>Username:
+                            <label className="username-password-input">Username:
                                 <input type="text"
                                     value={this.state.username}
                                     onChange={this.update('username')}
@@ -110,7 +120,7 @@ class SessionForm extends React.Component {
                                 />
                             </label>
                             <br />
-                            <label>Password:
+                            <label className="username-password-input">Password:
                                 <input type="password"
                                     value={this.state.password}
                                     onChange={this.update('password')}
@@ -121,12 +131,22 @@ class SessionForm extends React.Component {
                             {signingUp()}
                             <br />
                             <br />
+                            <label className="login-register-button">
+                                <br />
+                                <br />
                             <input className="session-submit" type="submit" value={this.props.formType} />
+                            </label>
+                            <br />
+                            <br />
                         </div>
                     </form>
                     {demoUser()}
                 </div>
-                <div></div>
+                <div className="sign-in-policy">By clicking Sign In, you agree to Medsy's Terms 
+                    of Use and Privacy Policy. Medsy may send you 
+                    communications; you may change your preferences 
+                    in your account settings. We'll never post without 
+                    your permission.</div>
             </div >
         );
     }

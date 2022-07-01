@@ -42,15 +42,17 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: 20px;
-    height: 500px;
+    height: 650px;
+    width: 300px;
 }
 
 .modal-child button {
     border: none;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 20px
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .form-welcome {
@@ -64,15 +66,17 @@
     border: none;
     background-color: white;
     border: 1px solid black;
-    border-radius: 5px;
-    font-size: 20px
+    border-radius: 25px;
+    font-size: 20px;
+    width: 100px;
+
 }
 
 .form-button {
     border: none;
     background-color: black;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 20px;
     color: white;
 }
@@ -82,9 +86,54 @@
     color: white;
     float: right;
     font-size: 30px;
-    top: 0px;
-    right: -30px;
+    top: -40px;
+    right: -5px;
     height: 20px;
     width: 20px;
     cursor: pointer;
+}
+
+.username-password-input {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-input {
+    height: 40px;
+    border-radius: 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+}
+
+.login-errors {
+    color: red
+}
+
+.logout-button {
+    font-size: 15px;
+    line-height: 1.4;
+    min-height: 36px;
+    min-width: 36px;
+    // padding-top: 5%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.logout-button:hover {
+    color: aqua;
+    border: 1px solid aqua
+}
+
+.sign-in-policy {
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color:rgb(187, 187, 186)
 }
