@@ -12,6 +12,8 @@ class CategoriesOptions extends React.Component {
 
         // this.update = this.update.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit2 = this.handleSubmit2.bind(this);
+
     };
 
     // update(e) {
@@ -22,11 +24,15 @@ class CategoriesOptions extends React.Component {
         e.preventDefault();
         this.props.history.push(`/category/${e.target.value}`);
     }
+    handleSubmit2(e) {
+        e.preventDefault();
+        this.props.history.push(`/search/${e.target.value}`);
+    }
 
     render () {
 
         return (
-
+            <>
             <div className="temporary-category-container">
                 
                 <div className="one-category-container">
@@ -95,6 +101,35 @@ class CategoriesOptions extends React.Component {
                     </div>
                 </div>
             </div>
+
+            <div className="category-rhyme-container">
+                <button
+                        value="Gel"
+                        onClick={this.handleSubmit2}
+                        className="rhyme-button">
+                            Yells for Gels
+                </button>
+                <button
+                        value="vial"
+                        onClick={this.handleSubmit2}
+                        className="rhyme-button">
+                            Aisles of Vials
+                </button>
+                <button
+                        value="tablet"
+                        onClick={this.handleSubmit2}
+                        className="rhyme-button">
+                            Refills on Pills
+                </button>
+                <button
+                        value="injection"
+                        onClick={this.handleSubmit2}
+                        className="rhyme-button">
+                            Inceptions of Injections
+                </button>
+            </div>
+
+            </>
         )
     }
 }
