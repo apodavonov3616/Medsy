@@ -2,7 +2,7 @@
 
 [Visit Live Site](http://medsy.herokuapp.com/#/)
 
-This website was designed to mimic the original etsy.com website. Rather than using any products, Medsy is configured to only be used for medications. Users can look up medications via search bar or category buttons. Users can also click on any of the medication and be redirected to the medication's show page.
+This website was designed to mimic the original etsy.com website. Rather than using any products, Medsy is configured to only be used for medications. Users can look up medications via search bar or category buttons. Users can also click on any of the medication and be redirected to the medication's show page. This website is dynamic in that it changes shipping date based on current date and saves users who are logged in. Bootstrap was used to make sure users don't have to sign in at every new page load.
 
 ![website structure](medsy-2.png)
 
