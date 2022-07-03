@@ -6,7 +6,7 @@ This website was designed to mimic the original etsy.com website. Rather than us
 
 ![website structure](medsy-2.png)
 
-Technologies Used:
+## Technologies Used:
 HTML
 Javascript
 CSS
@@ -16,12 +16,12 @@ React and Redux
 Webpack
 Amazon AWS Storage
 
-Interesting bug fixed:
+## Interesting bug fixed:
 The route to render search results is:
-    <Route exact path="/search/:searched" component={SearchShow} /> 
+    `<Route exact path="/search/:searched" component={SearchShow} />` 
 When a user searched for an empty string, this route was not used since the path was "/search/".
 To fix this, I added another route to render the index component:
-    <Route exact path="/search" component={MedicationIndexContainer} />
+    `<Route exact path="/search" component={MedicationIndexContainer} />`
 This allowed the index page to show all medications whenever a user searches for an empty string.
 
 
