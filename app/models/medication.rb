@@ -5,4 +5,8 @@ class Medication < ApplicationRecord
         class_name: :User
 
     has_one_attached :photo
+
+    has_many :carts,
+        foreign_key: :med_id,
+        class_name: :Cart
 end

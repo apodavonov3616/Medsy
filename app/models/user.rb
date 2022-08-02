@@ -7,6 +7,10 @@ class User < ApplicationRecord
 
     has_one_attached :photo
 
+    has_many :carts,
+        foreign_key: :buyer_id,
+        class_name: :Cart
+
     after_initialize :ensure_session_token
 
     def self.find_by_credentials(username, password)

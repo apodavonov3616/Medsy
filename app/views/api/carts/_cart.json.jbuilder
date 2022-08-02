@@ -1,0 +1,1 @@
+json.extract! cart, :id, :buyer_id, :med_id, :total_cost, :quantity

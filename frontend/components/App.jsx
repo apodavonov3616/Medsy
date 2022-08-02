@@ -12,22 +12,20 @@ import SearchShow from "./../components/greeting/search/search_show";
 import SearchBar from "./greeting/search/search_bar";
 import CategoriesContainer from "./categories/categories_container";
 import CategoriesOptions from "./categories/categories_options";
-
-
-
+import CartContainer from "./cart/cart_container";
 
 
 const App = () => (
     <div>
         <header>
             <Link to="/" className="title header-element">Medsy</Link>
-            <SearchBar/> 
+            <SearchBar />
             <GreetingContainer />
             <ModalContainer />
         </header>
         <div className="header-rectangle"></div>
         <br />
-        <CategoriesOptions/>
+        <CategoriesOptions />
         <br />
         <br />
         <br />
@@ -36,8 +34,10 @@ const App = () => (
             <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
             <Route exact path="/" component={MedicationIndexContainer} />
             <Route exact path="/search" component={MedicationIndexContainer} />
-            <Route exact path="/search/:searched" component={SearchShow} /> 
-            <Route exact path="/category/:category" component={CategoriesContainer} /> 
+            <Route exact path="/search/:searched" component={SearchShow} />
+            <Route exact path="/category/:category" component={CategoriesContainer} />
+            <Route exact path="/carts" component={CartContainer} />
+
         </Switch>
         {/* <BottomPage/> */}
     </div>
