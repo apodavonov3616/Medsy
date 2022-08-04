@@ -1,4 +1,4 @@
-import * as CartMedAPIUtil from '../util/cart_api_util';
+import * as CartMedAPIUtil from '../util/cart_meds_api_util';
 
 export const RECEIVE_CART_MEDS = "RECEIVE_CART_MEDS";
 export const RECEIVE_CART_MED = "RECEIVE_CART_MED";

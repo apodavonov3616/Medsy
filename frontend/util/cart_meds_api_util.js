@@ -1,21 +1,21 @@
 export const fetchCartMeds = () => {
     return $.ajax({
         method: 'GET',
-        url: '/api/carts'
+        url: '/api/cart_meds'
     })
 };
 
 export const fetchCartMed = (cartMedId) => {
     return $.ajax({
         method: 'GET',
-        url: `/api/carts/${cartMedId}`
+        url: `/api/cart_meds/${cartMedId}`
     })
 };
 
 export const createCartMed = (cartMed) => {
     return $.ajax({
         method: 'POST',
-        url: '/api/carts',
+        url: '/api/cart_meds',
         data: { cart_med: cartMed }
     })
 };
@@ -23,7 +23,7 @@ export const createCartMed = (cartMed) => {
 export const updateCartMed = (cartMed) => {
     return $.ajax({
         method: 'PATCH',
-        url: `/api/carts/${cartMed.id}`,
+        url: `/api/cart_meds/${cartMed.id}`,
         data: { cart_med: cartMed }
     })
 };
@@ -31,6 +31,6 @@ export const updateCartMed = (cartMed) => {
 export const destroyCartMed = (cartMedId) => {
     return $.ajax({
         method: 'DELETE',
-        url: `/api/carts/${cartMedId}`
+        url: `/api/cart_meds/${cartMedId}`
     })
 };

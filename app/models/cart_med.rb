@@ -1,4 +1,4 @@
-class Cart < ApplicationRecord
+class CartMed < ApplicationRecord
     validates :buyer_id, :med_id, :total_cost, :quantity, presence: true
 
     belongs_to :med,

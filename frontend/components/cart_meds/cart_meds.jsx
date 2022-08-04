@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Cart = (props) => {
+const CartMeds = (props) => {
     const handleUpdateQuantity = (cartMed) => {
         return (e) => props.updateCartMed({
             id: cartMed.id,
@@ -14,9 +14,10 @@ const Cart = (props) => {
     }
 
     const handleDeleteMed = (e) => {
+        debugger
         e.preventDefault();
         //change here
-        props.destroyCartMed(props.cartMedId);
+        props.destroyCartMed(props.cartMed);
     }
 
     useEffect(() => {
@@ -65,4 +66,4 @@ const Cart = (props) => {
     )
 }
 
-export default Cart;
+export default CartMeds;

@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { fetchMedication } from '../../actions/medication_actions';
 import MedicationShow from './medication_show';
 import * as MedicationAPIUtil from "../../util/medication_util";
-import { createCartMed } from '../../actions/cart_actions';
+import { createCartMed } from '../../actions/cart_meds_actions';
 
 
 const mSTP = (state, ownProps) => {

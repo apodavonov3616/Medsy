@@ -7,9 +7,9 @@ class User < ApplicationRecord
 
     has_one_attached :photo
 
-    has_many :carts,
+    has_many :cart_meds,
         foreign_key: :buyer_id,
-        class_name: :Cart
+        class_name: :CartMed
 
     after_initialize :ensure_session_token
 

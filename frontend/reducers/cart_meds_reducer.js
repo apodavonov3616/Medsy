@@ -2,9 +2,9 @@ import {
     RECEIVE_CART_MEDS,
     RECEIVE_CART_MED,
     REMOVE_CART_MED
-} from '../actions/cart_actions'
+} from '../actions/cart_meds_actions'
 
-const cartMedReducer = (oldState = {}, action) => {
+const cartMedsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let nextState = Object.assign({}, oldState);
     switch (action.type) {
@@ -21,4 +21,4 @@ const cartMedReducer = (oldState = {}, action) => {
     }
 }
 
-export default cartMedReducer;
+export default cartMedsReducer;

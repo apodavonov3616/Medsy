@@ -12,7 +12,7 @@ import SearchShow from "./../components/greeting/search/search_show";
 import SearchBar from "./greeting/search/search_bar";
 import CategoriesContainer from "./categories/categories_container";
 import CategoriesOptions from "./categories/categories_options";
-import CartContainer from "./cart/cart_container";
+import CartMedsContainer from "./cart_meds/cart_meds_container";
 
 
 const App = () => (
@@ -36,7 +36,7 @@ const App = () => (
             <Route exact path="/search" component={MedicationIndexContainer} />
             <Route exact path="/search/:searched" component={SearchShow} />
             <Route exact path="/category/:category" component={CategoriesContainer} />
-            <Route exact path="/carts" component={CartContainer} />
+            <Route exact path="/cart_meds" component={CartMedsContainer} />
 
         </Switch>
         {/* <BottomPage/> */}
