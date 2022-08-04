@@ -4,7 +4,6 @@ import { destroyCartMed, fetchCartMeds, updateCartMed } from '../../actions/cart
 import { fetchMedications, fetchMedication } from '../../actions/medication_actions'
 
 const mSTP = (state, ownProps) => {
-    debugger
     return {
         cartMeds: Object.values(state.entities.carts),
         // currentUser: state.entities.users[state.session.id],

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
-
     const handleUpdateQuantity = (cartMed) => {
         return (e) => props.updateCartMed({
             id: cartMed.id,
@@ -16,7 +15,6 @@ const Cart = (props) => {
 
     const handleDeleteMed = (e) => {
         e.preventDefault();
-        debugger
         //change here
         props.destroyCartMed(props.cartMedId);
     }
@@ -36,8 +34,6 @@ const Cart = (props) => {
             <ul>
                 {
                     cartMeds.map((cartMed) => {
-
-
                         return (
                             <div>
                                 <Link to={`/products/${cartMed.productId}`}>

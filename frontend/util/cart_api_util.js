@@ -13,7 +13,6 @@ export const fetchCartMed = (cartMedId) => {
 };
 
 export const createCartMed = (cartMed) => {
-    debugger
     return $.ajax({
         method: 'POST',
         url: '/api/carts',
@@ -30,7 +29,6 @@ export const updateCartMed = (cartMed) => {
 };
 
 export const destroyCartMed = (cartMedId) => {
-    debugger
     return $.ajax({
         method: 'DELETE',
         url: `/api/carts/${cartMedId}`

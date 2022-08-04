@@ -5,7 +5,7 @@ const MedicationShow = (props) => {
     const [quantity, setQuantity] = useState(1);
 
     const selectQuantity = (choice) => {
-        setQuantity({ quantity: choice.target.value })
+        setQuantity(choice.target.value)
     }
 
     useEffect(() => {

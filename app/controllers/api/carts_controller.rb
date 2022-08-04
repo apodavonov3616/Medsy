@@ -13,7 +13,6 @@ class Api::CartsController < ApplicationController
     end
 
     def create
-        console.log('create')
         @cart = current_user.carts.new(cart_meds_params);
 
         if @cart.save
