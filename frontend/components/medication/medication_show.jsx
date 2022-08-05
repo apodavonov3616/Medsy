@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReviewForm from '../reviews/review_form';
 
 const MedicationShow = (props) => {
 
@@ -80,6 +81,7 @@ const MedicationShow = (props) => {
                         {/* <div>Get it today with our same-day delivery</div> */}
                         <div>Get it tomorrow on {dateFunction()} with our expedited service</div>
                     </div>
+                    <ReviewForm />
                 </div>
             </div>
         </div>
