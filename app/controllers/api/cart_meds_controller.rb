@@ -14,7 +14,6 @@ class Api::CartMedsController < ApplicationController
 
     def create
         @cart_med = current_user.cart_meds.new(cart_meds_params);
-        debugger
         if @cart_med.save
             render :show
         else
@@ -34,11 +33,10 @@ class Api::CartMedsController < ApplicationController
     end
 
     def destroy
-        debugger
         if logged_in?
             @cart_med = CartMed.find(params[:id])
             if @cart_med.destroy
-                render :show 
+                render :show
             end
         end
     end

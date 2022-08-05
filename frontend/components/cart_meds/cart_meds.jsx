@@ -14,10 +14,9 @@ const CartMeds = (props) => {
     }
 
     const handleDeleteMed = (e) => {
-        debugger
         e.preventDefault();
-        //change here
-        props.destroyCartMed(props.cartMed);
+        props.destroyCartMed(props.cartMedId);
+        window.location.reload()
     }
 
     useEffect(() => {
@@ -53,8 +52,6 @@ const CartMeds = (props) => {
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option>
-
                                 </select>
                                 <button onClick={handleDeleteMed}>Delete</button>
                             </div>

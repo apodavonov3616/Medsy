@@ -28,6 +28,7 @@ const MedicationShow = (props) => {
         e.preventDefault();
 
         const cartMed = {
+            id: props.medication.id,
             med_id: props.medication.id,
             quantity: quantity,
             total_cost: props.medication.price

@@ -7,7 +7,7 @@ const mSTP = (state, ownProps) => {
     return {
         cartMeds: Object.values(state.entities.cartMeds),
         currentUser: state.entities.users[state.session.id],
-        // cartMedId: Object.keys(state.entities.carts.id)
+        cartMedId: Object.keys(state.entities.cartMeds)
     };
 };
 
