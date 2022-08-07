@@ -1,49 +1,39 @@
 class Api::ReviewsController < ApplicationController
+    before_action :require_logged_in, only: [:create, :edit, :delete]
 
-    def index
-        @reviews = Review.all
-    end
-
-    def show
-        @review = Review.find(params[:id])
+    def index 
+        medication = Medication.find(params[:medication_id])
+        @reviews = medication.reviews 
+        render :index 
     end
     
-
     def create
-        @review = Review.new(review_params)
-        
-        if @review.save
-            render :show
-        else
-            render json: @review.errors.full_messages, status: 401
-        end
-    end
-    
-    def update
-        @review = Review.find_by(id: params[:id])
+        debugger
+        medication = Medication.find(params[:medication_id])
+        medication_id = medication.id
 
-        if @review && @review.update_attributes(review_params)
+        @review = Review.new(review_params)
+        @review.medication_id = medication_id
+        @review.buyer_id = @current_user.id
+        
+        if @review.save 
             render :show
-        elsif !@review
-            render json: ['Could not find review'], status: 400
         else
-            render json: @review.errors.full_messages, status: 401
+            render json: @review.errors.full_messages
         end
     end
-    
-    
-    def destroy
-        @review = Review.find_by(id: params[:id])
-        if @review
-            @review.destroy
+
+    def update 
+        @review = Review.find(params[:id])
+        if @review.update(review_params)
             render :show
         else
-            render ['Could not find review']
+            render json: @review.errors.full_messages
         end
     end
 
     private
     def review_params
-        params.require(:review).permit(:id, :body, :buyer_id, :rating, :medication_id)
+        params.require(:review).permit(:rating, :body, :id, :buyer_id)
     end
 end

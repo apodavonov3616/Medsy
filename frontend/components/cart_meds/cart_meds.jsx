@@ -5,7 +5,7 @@ const CartMeds = (props) => {
     const handleUpdateQuantity = (cartMed) => {
         return (e) => props.updateCartMed({
             id: cartMed.id,
-            product_id: cartMed.productId,
+            medication_id: cartMed.medicationId,
             total_cost: cartMed.price,
             quantity: e.target.value,
             photoUrl: cartMed.photoUrl
@@ -36,11 +36,11 @@ const CartMeds = (props) => {
                     cartMeds.map((cartMed) => {
                         return (
                             <div>
-                                <Link to={`/products/${cartMed.productId}`}>
+                                <Link to={`/medications/${cartMed.medicationId}`}>
                                     {/* <img src={cartMed.photoUrl} className="direct-img" /> */}
                                 </Link>
-                                <h2 className="product-name">{cartMed.name}</h2>
-                                <h2 className="product-price">${cartMed.price * cartMed.quantity}</h2>
+                                <h2 className="medication-name">{cartMed.name}</h2>
+                                <h2 className="medication-price">${cartMed.price * cartMed.quantity}</h2>
                                 <h2>{cartMed.quantity}</h2>
 
                                 <select className="dropdown-content"

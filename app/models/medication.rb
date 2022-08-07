@@ -9,4 +9,8 @@ class Medication < ApplicationRecord
     has_many :carts,
         foreign_key: :med_id,
         class_name: :Cart
+
+    has_many :reviews,
+        foreign_key: :medication_id,
+        class_name: :Review
 end

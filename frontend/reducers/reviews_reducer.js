@@ -1,26 +1,19 @@
-import { RECEIVE_REVIEW, RECEIVE_REVIEWS, CLEAR_REVIEWS, REMOVE_REVIEW } from '../actions/review_actions';
-import { RECEIVE_MEDICATION } from '../actions/medication_actions';
+import { RECEIVE_REVIEW, RECEIVE_REVIEWS } from "./../actions/review_actions";
 
-
-export default (state = {}, action) => {
+const reviewsReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
-        case RECEIVE_REVIEWS:
-            const reviews = {}
-            action.reviews.forEach(review => {
-                reviews[review.id] = review;
-            });
-            return reviews
         case RECEIVE_REVIEW:
-            return Object.assign({}, state, action.review)
-        case REMOVE_REVIEW:
-            return Object.assign({}, state)
-        case RECEIVE_MEDICATION:
-            return Object.assign({}, state, action.payload.reviews)
-        case CLEAR_REVIEWS:
-            return {}
+            return Object.assign({}, state, {
+                [action.review.id]: action.review
+            });
+
+        case RECEIVE_REVIEWS:
+            return Object.assign({}, action.reviews);
 
         default:
-            return state
+            return state;
     }
-}
+};
+
+export default reviewsReducer;

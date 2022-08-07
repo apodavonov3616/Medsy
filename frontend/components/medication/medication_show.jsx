@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReviewForm from '../reviews/review_form';
+import ReviewIndex from '../reviews/review_index';
+
 
 const MedicationShow = (props) => {
 
@@ -37,7 +39,6 @@ const MedicationShow = (props) => {
         props.createCartMed(cartMed).then(() =>
             props.history.push('/cart_meds'))
     }
-
     const { medication, carts } = props
     if (!medication) return null
     return (
@@ -81,7 +82,9 @@ const MedicationShow = (props) => {
                         {/* <div>Get it today with our same-day delivery</div> */}
                         <div>Get it tomorrow on {dateFunction()} with our expedited service</div>
                     </div>
-                    <ReviewForm />
+                    <ReviewForm medicationId={props.medication.id} />
+                    {/* <ReviewIndex medicationId={props.medication.id} /> */}
+
                 </div>
             </div>
         </div>
