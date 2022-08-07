@@ -18,7 +18,7 @@ class ReviewForm extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         this.props.createReview(this.state, this.props.medicationId);
-        this.setState({ rating: 0, body: '', buyer_id: this.props.currentUser.id });
+        this.setState({ rating: 0, body: '' });
         window.location.reload()
 
     }

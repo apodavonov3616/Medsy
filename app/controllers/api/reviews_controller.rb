@@ -3,12 +3,11 @@ class Api::ReviewsController < ApplicationController
 
     def index 
         medication = Medication.find(params[:medication_id])
-        @reviews = medication.reviews 
+        @reviews = medication.reviews
         render :index 
     end
     
     def create
-        debugger
         medication = Medication.find(params[:medication_id])
         medication_id = medication.id
 
@@ -16,7 +15,7 @@ class Api::ReviewsController < ApplicationController
         @review.medication_id = medication_id
         @review.buyer_id = @current_user.id
         
-        if @review.save 
+        if @review.save
             render :show
         else
             render json: @review.errors.full_messages

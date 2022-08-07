@@ -79,11 +79,10 @@ const MedicationShow = (props) => {
                     </div>
                     <div className="delivery">
                         <img src="https://medsy-seed.s3.amazonaws.com/truck_2.jpg" alt="truck" className="truck-image" />
-                        {/* <div>Get it today with our same-day delivery</div> */}
                         <div>Get it tomorrow on {dateFunction()} with our expedited service</div>
                     </div>
                     <ReviewForm medicationId={props.medication.id} />
-                    {/* <ReviewIndex medicationId={props.medication.id} /> */}
+                    <ReviewIndex medicationId={props.medication.id} />
 
                 </div>
             </div>

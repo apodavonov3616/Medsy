@@ -6,7 +6,6 @@ export const fetchReviews = medicationId => {
 };
 
 export const createReview = (review, medicationId) => {
-    debugger
     return $.ajax({
         method: 'POST',
         url: `api/medications/${medicationId}/reviews`,
