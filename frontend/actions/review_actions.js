@@ -2,6 +2,8 @@ import * as ReviewsApiUtil from './../util/review_api_util';
 export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
+export const REMOVE_REVIEW = 'REMOVE_REVIEW';
+
 
 export const receiveReviews = reviews => ({
     type: RECEIVE_REVIEWS,
@@ -16,6 +18,10 @@ export const receiveReview = review => ({
 export const receiveReviewErrors = errors => ({
     type: RECEIVE_REVIEW_ERRORS,
     errors
+})
+
+const removeReviews = () => ({
+    type: CLEAR_REVIEWS
 })
 
 export const fetchReviews = medicationId => dispatch => {
@@ -45,6 +51,8 @@ export const updateReview = (review) => dispatch => (
         ))
 );
 
-
-
+export const deleteReview = (reviewId) => dispatch => (
+    ReviewsApiUtil.destroyReview(reviewId)
+        .then(review => dispatch(removeReview(review)))
+);
 

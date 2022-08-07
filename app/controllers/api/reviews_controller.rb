@@ -31,6 +31,16 @@ class Api::ReviewsController < ApplicationController
         end
     end
 
+    def destroy
+        @review = Review.find(params[:id])
+        if @review
+            @review.destroy
+            render :show
+        else
+            render ['Could not find review']
+        end
+    end
+
     private
     def review_params
         params.require(:review).permit(:rating, :body, :id, :buyer_id)

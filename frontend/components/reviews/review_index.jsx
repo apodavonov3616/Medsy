@@ -1,49 +1,49 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { selectAllReviews } from '../../reducers/allReviews';
-import { fetchReviews } from './../../actions/review_actions';
+import { fetchReviews, deleteReview } from './../../actions/review_actions';
 import StarRatings from 'react-star-ratings';
 import { Link } from 'react-router-dom';
+import ReviewItem from "./review_item"
 
 class ReviewsIndex extends React.Component {
     constructor(props) {
         super(props)
+        this.handleDelete = this.handleDelete.bind(this)
     }
 
     componentDidMount() {
         this.props.fetchReviews(this.props.medicationId)
     }
 
-    render() {
+    handleDelete(e) {
         debugger
-        let { reviews } = this.props;
+        e.preventDefault();
+        this.props.deleteReview(this.props.reviewId);
+        window.location.reload()
+    }
 
-        const reviewsList = reviews.map(review => {
+    render() {
+        let { reviews, currentUser, deleteReview } = this.props;
+        let reviewsList = reviews.map(review => {
             return (
                 <li key={review.id}>
-                    <div>
-                        <Link to={`/users/${review.buyer_id}`}>{review.userName}</Link>
-                    </div>
-                    <StarRatings
-                        rating={review.rating}
-                        starDimension="20px"
-                        starSpacing="4px"
-                        starRatedColor='#f2b01e'
+                    <ReviewItem
+                        review={review}
+                        currentUser={currentUser}
+                        fetchReviews={fetchReviews}
+                        reviewId={review.id}
+                        deleteReview={deleteReview}
                     />
-                    <div>
-                        {review.body}
-                    </div>
                 </li>
             )
         })
 
         return (
-            <div>
-                <h3>Reviews</h3>
-                <div>
-                    {reviewsList}
-                </div>
-            </div>
+            <ul>
+                {reviewsList}
+            </ul>
+
         )
     }
 }
@@ -52,13 +52,16 @@ class ReviewsIndex extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        reviews: selectAllReviews(state.entities.reviews)
+        reviews: selectAllReviews(state.entities.reviews),
+        currentUser: state.entities.users[state.session.id],
     };
 };
 
 const mapDispatchToProps = dispatch => {
+
     return {
-        fetchReviews: productId => dispatch(fetchReviews(productId))
+        fetchReviews: productId => dispatch(fetchReviews(productId)),
+        deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
     };
 };
 
