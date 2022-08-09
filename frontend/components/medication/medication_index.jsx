@@ -10,19 +10,19 @@ const MedicationIndex = (props) => {
     const { medications, fetchMedications } = props
 
     const firstMeds = (medications) => {
-        return medications.slice(0,3)
+        return medications.slice(0, 10)
     }
 
     const secondMeds = (medications) => {
-        return medications.slice(10,20)
+        return medications.slice(10, 20)
     }
 
     const thirdMeds = (medications) => {
-        return medications.slice(20,30)
+        return medications.slice(20, 30)
     }
 
     const fourthMeds = (medications) => {
-        return medications.slice(30,medications.length)
+        return medications.slice(30, medications.length)
     }
 
     return (

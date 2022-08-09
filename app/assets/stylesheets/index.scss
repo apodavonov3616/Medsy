@@ -13,18 +13,19 @@ body {
     list-style: none;
     justify-content: space-around !important;
 }
+
 .medication-index-item {
     align-items: stretch;
     display: block !important;
     float: left;
-    width: 300px;
+    width: 80%;
     padding: 9px;
 }
 
 .medication-index-photo {
-    height: 300px;
-    width: 300px;
+    width: 100%;
 }
+
 .medication-index-item-info {
     flex-direction: row;
     box-sizing: border-box;
@@ -65,9 +66,12 @@ body {
 }
 
 .medication-index-first-meds {
-display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
+    // display: grid;
+    //   grid-template-columns: auto auto auto auto;
+    //   padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 10px 10px;
 }
 
 .medication-index-second-meds {
