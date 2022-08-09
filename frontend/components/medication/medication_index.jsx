@@ -9,14 +9,30 @@ const MedicationIndex = (props) => {
 
     const { medications, fetchMedications } = props
 
+    const firstMeds = (medications) => {
+        return medications.slice(0,3)
+    }
+
+    const secondMeds = (medications) => {
+        return medications.slice(10,20)
+    }
+
+    const thirdMeds = (medications) => {
+        return medications.slice(20,30)
+    }
+
+    const fourthMeds = (medications) => {
+        return medications.slice(30,medications.length)
+    }
+
     return (
         <>
             <div className="index-quota">When you're out of sick days, we got you covered!</div>
             <br />
             <br />
-            <div className="medication-index">
+            <div className="medication-index-first-meds">
                 {
-                    medications.map(medication => {
+                    firstMeds(medications).map(medication => {
                         return (
                             <MedicationIndexItem
                                 medication={medication}
@@ -25,6 +41,9 @@ const MedicationIndex = (props) => {
                         )
                     })
                 }
+                <div>
+                    Discover a plethora of medications that treat any symptoms
+                </div>
             </div>
         </>
     )

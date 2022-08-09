@@ -1,3 +1,8 @@
+body {
+    width: 100%;
+    margin: 0px;
+}
+
 .medication-index-container {
     width: 1402px !important;
     max-width: 1402px !important;
@@ -59,8 +64,14 @@
     max-width: 50px;
 }
 
-.medication-index {
+.medication-index-first-meds {
 display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
+}
+
+.medication-index-second-meds {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
 }
