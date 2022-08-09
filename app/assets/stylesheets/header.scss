@@ -12,7 +12,7 @@
     font-size: 40px;
     height: 60px;
     width: fit-content;
-    font-family: "Guardian-EgypTT",serif;
+    font-family: "Guardian-EgypTT", serif;
 }
 
 header {
@@ -54,7 +54,7 @@ header {
 }
 
 .search-bar-button:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .search-input {
@@ -90,4 +90,8 @@ header {
 
 #root {
     width: 100%;
+}
+
+body {
+    min-width: 870px;
 }

@@ -26,7 +26,7 @@ const MedicationIndex = (props) => {
     }
 
     return (
-        <>
+        <div className="index-page">
             <div className="index-quota">When you're out of sick days, we got you covered!</div>
             <br />
             <br />
@@ -47,7 +47,7 @@ const MedicationIndex = (props) => {
                     </p>
                     <br />
                     <b>
-                        Non sodales neque sodales
+                        Non sodales neque sodales proin
                         <br />
                     </b>
                     <h2>
@@ -64,7 +64,7 @@ const MedicationIndex = (props) => {
                     </p>
                     <br />
                     <b>
-                        Non sodales neque sodales
+                        Non sodales neque sodales proin
                         <br />
                     </b>
                     <h2>
@@ -84,7 +84,7 @@ const MedicationIndex = (props) => {
                     })
                 }
             </div>
-        </>
+        </div>
     )
 }
 
