@@ -29,9 +29,8 @@ body {
 .medication-index-item-info {
     flex-direction: row;
     box-sizing: border-box;
-    // div {
-    //     color: #2700ff;
-    // }
+    position: relative;
+    top: -30px;
 }
 
 .medication-index-item:hover {
@@ -56,8 +55,11 @@ body {
 }
 
 .medication-index-price {
-    border-radius: 80px;
+    border-radius: 10px;
     color: black;
+    background-size: auto;
+    background-color: #ececed;
+    width: fit-content;
 }
 
 .medication-index-price:hover {

@@ -29,7 +29,7 @@ const MedicationIndexItem = (props) => {
                 <Link className="medication-item-link" to={`/medications/${medication.id}`}>
                     <img className='medication-index-photo' src={medication.photoUrl} />
                     <div className="medication-index-item-info">
-                        <div className="medication-index-price">${medication.price}</div>
+                        <div className="medication-index-price">&nbsp;${medication.price}&nbsp;</div>
                         {/* <div className="limited-time-offer">{deals(medication.id)}</div> */}
                     </div>
                 </Link>
