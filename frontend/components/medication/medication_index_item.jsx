@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MedicationIndexItem = (props) => {
@@ -7,14 +7,14 @@ const MedicationIndexItem = (props) => {
 
     const deals = (medicationId) => {
         const deal = ["10% off Shipping", "BOGO 50% off"];
-        if ( medicationId % 6 === 0) {
+        if (medicationId % 6 === 0) {
             return deal[1]
-         } else {
+        } else {
             return deal[0]
         }
     }
 
-    
+
     const clearSearch = () => {
         let input = document.getElementsByClassName('search-input')
         input.value = ""
@@ -26,11 +26,11 @@ const MedicationIndexItem = (props) => {
                 <div>{medication.name}</div>            
             </Link> */}
             <li className='medication-index-item' key={`medication-${medication.id}`}>
-                <Link to={`/medications/${medication.id}`}>
+                <Link className="medication-item-link" to={`/medications/${medication.id}`}>
                     <img className='medication-index-photo' src={medication.photoUrl} />
                     <div className="medication-index-item-info">
                         <div className="medication-index-price">${medication.price}</div>
-                        <div className="limited-time-offer">{deals(medication.id)}</div>
+                        {/* <div className="limited-time-offer">{deals(medication.id)}</div> */}
                     </div>
                 </Link>
             </li>

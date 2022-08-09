@@ -79,3 +79,9 @@ body {
     grid-template-columns: auto auto auto auto;
     padding: 10px;
 }
+
+.medication-item-link {
+    text-decoration: none;
+    position: relative;
+    top: -30px;
+}
