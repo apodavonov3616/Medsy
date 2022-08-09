@@ -41,17 +41,37 @@ const MedicationIndex = (props) => {
                         )
                     })
                 }
-                <div className="medication-container" id="medication-text-1">
-                    Discover a plethora of medications that treat any symptoms
+                <div className="medication-container" id="medication-text-container-1">
+                    <p id="medication-text-1">
+                        &lArr; Editor's Picks
+                    </p>
                     <br />
-                    &lArr;
+                    <b>
+                        Non sodales neque sodales
+                        <br />
+                    </b>
+                    <h2>
+                        Ut etiam sit. Dui sapien eget
+                        <br />
+                        mi proin sed libero enim sed.
+                    </h2>
                 </div>
             </div>
             <div className="medication-index-first-meds">
-                <div className="medication-container" id="medication-text-2">
-                    Discover a plethora of medications that treat any symptoms
+                <div className="medication-container" id="medication-text-container-1">
+                    <p id="medication-text-1">
+                        Editor's Picks &rArr;
+                    </p>
                     <br />
-                    &rArr;
+                    <b>
+                        Non sodales neque sodales
+                        <br />
+                    </b>
+                    <h2>
+                        Ut etiam sit. Dui sapien eget
+                        <br />
+                        mi proin sed libero enim sed.
+                    </h2>
                 </div>
                 {
                     secondMeds(medications).map(medication => {

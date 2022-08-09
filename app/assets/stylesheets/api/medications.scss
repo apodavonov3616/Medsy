@@ -110,7 +110,27 @@
     height: 100%
 }
 
-#medication-text-1 #medication-text-2 {
-    font-size: 1.9em;
-    margin-top: 30px
+// #medication-text-1 #medication-text-2 {
+//     font-size: 50%;
+//     margin: 15px;
+// }
+
+.medication-container #medication-text-1 {
+    color: gray;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.medication-container h2 {
+    font-size: large;
+    font-weight: 100;
+}
+
+#medication-text-container-1 {
+    display: block;
+}
+
+.medication-container b {
+    font-size: x-large;
+
 }
