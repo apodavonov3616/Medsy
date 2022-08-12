@@ -14,14 +14,26 @@ const MedicationIndex = (props) => {
     }
 
     const secondMeds = (medications) => {
-        return medications.slice(7, 10)
+        return medications.slice(4, 7)
     }
 
     const thirdMeds = (medications) => {
-        return medications.slice(20, 30)
+        return medications.slice(8, 12)
     }
 
     const fourthMeds = (medications) => {
+        return medications.slice(12, 16)
+    }
+    const fifthMeds = (medications) => {
+        return medications.slice(16, 20)
+    }
+    const sixthMeds = (medications) => {
+        return medications.slice(22, 26)
+    }
+    const seventhMeds = (medications) => {
+        return medications.slice(26, 30)
+    }
+    const eighthMeds = (medications) => {
         return medications.slice(30, medications.length)
     }
 
@@ -84,8 +96,11 @@ const MedicationIndex = (props) => {
             </div>
             <div className="vertical-index-page-items-container">
                 <div className="vertical-index-page-items">
+                    <div className="text-2">
+                        Duis aute irure
+                    </div>
                     {
-                        firstMeds(medications).map(medication => {
+                        thirdMeds(medications).map(medication => {
                             return (
                                 <MedicationIndexItem
                                     medication={medication}
@@ -97,7 +112,25 @@ const MedicationIndex = (props) => {
                 </div>
                 <div className="vertical-index-page-items">
                     {
-                        secondMeds(medications).map(medication => {
+                        fourthMeds(medications).map(medication => {
+                            return (
+                                <MedicationIndexItem
+                                    medication={medication}
+                                    key={medication.id}
+                                />
+                            )
+                        })
+                    }
+                    <div className="text-2">
+                        Excepteur sint occaecat
+                    </div>
+                </div>
+                <div className="vertical-index-page-items">
+                    <div className="text-2">
+                        Quis nostrud exercitation
+                    </div>
+                    {
+                        fifthMeds(medications).map(medication => {
                             return (
                                 <MedicationIndexItem
                                     medication={medication}
@@ -109,7 +142,24 @@ const MedicationIndex = (props) => {
                 </div>
                 <div className="vertical-index-page-items">
                     {
-                        firstMeds(medications).map(medication => {
+                        sixthMeds(medications).map(medication => {
+                            return (
+                                <MedicationIndexItem
+                                    medication={medication}
+                                    key={medication.id}
+                                />
+                            )
+                        })
+                    }
+                    <div className="text-2">
+                        Nim id est laborum
+                    </div>
+                </div><div className="vertical-index-page-items">
+                    <div className="text-2">
+                        Deserunt mollit
+                    </div>
+                    {
+                        seventhMeds(medications).map(medication => {
                             return (
                                 <MedicationIndexItem
                                     medication={medication}

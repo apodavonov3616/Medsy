@@ -24,15 +24,16 @@ body {
 
 .medication-index-photo {
     width: 100%;
-    border: 2px solid rgb(255, 196, 0);
-    border-radius: 10px;
+    border: 3px solid rgb(255, 196, 0);
+    border-radius: 25px;
 }
 
 .medication-index-item-info {
     flex-direction: row;
     box-sizing: border-box;
     position: relative;
-    top: -30px;
+    top: -35px;
+    left: 5px;
 }
 
 .medication-index-item:hover {
@@ -94,10 +95,23 @@ body {
 
 .vertical-index-page-items-container {
     display: flex;
-    justify-content: center;
-    width: auto;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    top: -100px;
 }
 
 .vertical-index-page-items {
-    width: 33.3333%;
+    width: 20%;
+}
+
+.text-2 {
+    text-align: center;
+    margin: 50px;
+}
+
+.vertical-index-page-items *>.medication-index-photo {
+    width: 100%;
+    border: 2px solid rgb(255, 72, 0);
+    border-radius: 10px;
 }

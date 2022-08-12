@@ -103,7 +103,15 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.medication-container {
+.medication-index-first-meds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.medication-index-first-meds>.medication-container {
     display: flex;
     justify-content: center;
     align-items: center;
