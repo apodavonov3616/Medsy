@@ -24,6 +24,8 @@ body {
 
 .medication-index-photo {
     width: 100%;
+    border: 2px solid rgb(255, 196, 0);
+    border-radius: 10px;
 }
 
 .medication-index-item-info {
@@ -88,4 +90,14 @@ body {
     text-decoration: none;
     // position: relative;
     // top: -30px;
+}
+
+.vertical-index-page-items-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.vertical-index-page-items {
+    width: 33.3333%;
 }

@@ -10,7 +10,7 @@ const MedicationIndex = (props) => {
     const { medications, fetchMedications } = props
 
     const firstMeds = (medications) => {
-        return medications.slice(0, 7)
+        return medications.slice(0, 3)
     }
 
     const secondMeds = (medications) => {
@@ -82,8 +82,43 @@ const MedicationIndex = (props) => {
                     })
                 }
             </div>
-            <div class="vertical-index-page-items">
-
+            <div className="vertical-index-page-items-container">
+                <div className="vertical-index-page-items">
+                    {
+                        firstMeds(medications).map(medication => {
+                            return (
+                                <MedicationIndexItem
+                                    medication={medication}
+                                    key={medication.id}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                <div className="vertical-index-page-items">
+                    {
+                        secondMeds(medications).map(medication => {
+                            return (
+                                <MedicationIndexItem
+                                    medication={medication}
+                                    key={medication.id}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                <div className="vertical-index-page-items">
+                    {
+                        firstMeds(medications).map(medication => {
+                            return (
+                                <MedicationIndexItem
+                                    medication={medication}
+                                    key={medication.id}
+                                />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )

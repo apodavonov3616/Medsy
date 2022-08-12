@@ -17,7 +17,7 @@ const CategoryShow = (props) => {
 
     return (
         <div className="category-result-container">
-        <div className="index-quota">Symptoms can be serious. Knowing where to look is half the battle.</div>
+            <div className="index-quota">Knowing where to look is half the battle.</div>
 
             <ul className="category-result">
                 {
