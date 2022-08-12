@@ -1,0 +1,35 @@
+.what-is-medsy {
+    background-color: #fdebd2;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: thin;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    max-width: 1500px
+}
+
+.what-is-medsy>h1 {
+    font-size: 44px;
+    line-height: 48px;
+}
+
+.what-answer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left !important;
+}
+
+.what-answer {
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px;
+}
+
+.what-answer *>b {
+    font-size: 28px;
+    line-height: 36px;
+}

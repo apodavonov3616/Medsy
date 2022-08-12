@@ -13,6 +13,7 @@ import SearchBar from "./greeting/search/search_bar";
 import CategoriesContainer from "./categories/categories_container";
 import CategoriesOptions from "./categories/categories_options";
 import CartMedsContainer from "./cart_meds/cart_meds_container";
+import BottomPage from "./bottom_page/bottom_page"
 
 
 const App = () => (
@@ -39,7 +40,7 @@ const App = () => (
             <Route exact path="/cart_meds" component={CartMedsContainer} />
 
         </Switch>
-        {/* <BottomPage/> */}
+        <BottomPage />
     </div>
 );
 
