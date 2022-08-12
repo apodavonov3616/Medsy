@@ -106,8 +106,8 @@
 .medication-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 25%;
-    height: 100%
 }
 
 // #medication-text-1 #medication-text-2 {
@@ -117,7 +117,6 @@
 
 .medication-container #medication-text-1 {
     color: gray;
-    padding-top: 20px;
     margin-bottom: 0px;
 }
 
@@ -127,7 +126,8 @@
 }
 
 #medication-text-container-1 {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .medication-container b {

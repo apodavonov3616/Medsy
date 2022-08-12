@@ -10,11 +10,11 @@ const MedicationIndex = (props) => {
     const { medications, fetchMedications } = props
 
     const firstMeds = (medications) => {
-        return medications.slice(0, 3)
+        return medications.slice(0, 7)
     }
 
     const secondMeds = (medications) => {
-        return medications.slice(3, 6)
+        return medications.slice(7, 10)
     }
 
     const thirdMeds = (medications) => {
@@ -60,17 +60,15 @@ const MedicationIndex = (props) => {
             <div className="medication-index-first-meds">
                 <div className="medication-container" id="medication-text-container-1">
                     <p id="medication-text-1">
-                        Editor's Picks &rArr;
+                        The Medication Shop
                     </p>
                     <br />
                     <b>
-                        Non sodales neque sodales proin
+                        Sodales neque sodales proin
                         <br />
                     </b>
                     <h2>
-                        Ut etiam sit. Dui sapien eget
-                        <br />
-                        mi proin sed libero enim sed.
+                        Lit etiam sit. Dui sapien eget
                     </h2>
                 </div>
                 {
@@ -83,6 +81,9 @@ const MedicationIndex = (props) => {
                         )
                     })
                 }
+            </div>
+            <div class="vertical-index-page-items">
+
             </div>
         </div>
     )
