@@ -14,7 +14,8 @@
 
 .modal-login-button:hover {
     background-color: rgb(243, 243, 235);
-    transform: scale(1.2)
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 // .login-form-container {
@@ -72,6 +73,10 @@
 
 }
 
+.session-submit:hover {
+    cursor: pointer;
+}
+
 .form-button {
     border: none;
     background-color: black;
@@ -79,6 +84,10 @@
     border-radius: 25px;
     font-size: 20px;
     color: white;
+}
+
+.form-button {
+    cursor: pointer;
 }
 
 .modal-close {
