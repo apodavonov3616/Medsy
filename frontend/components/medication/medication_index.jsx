@@ -59,13 +59,13 @@ const MedicationIndex = (props) => {
                     </p>
                     <br />
                     <b>
-                        Non sodales neque sodales proin
+                        The Healing Remedies
                         <br />
                     </b>
                     <h2>
-                        Ut etiam sit. Dui sapien eget
-                        <br />
-                        mi proin sed libero enim sed.
+                        Shop for your perfect medicine
+                        {/* <br />
+                        mi proin sed libero enim sed. */}
                     </h2>
                 </div>
             </div>
@@ -76,11 +76,11 @@ const MedicationIndex = (props) => {
                     </p>
                     <br />
                     <b>
-                        Sodales neque sodales proin
+                        Treatment a click away
                         <br />
                     </b>
                     <h2>
-                        Lit etiam sit. Dui sapien eget
+                        Discover unique meds that fight your symptoms
                     </h2>
                 </div>
                 {
@@ -97,7 +97,7 @@ const MedicationIndex = (props) => {
             <div className="vertical-index-page-items-container">
                 <div className="vertical-index-page-items">
                     <div className="text-2">
-                        Duis aute irure
+                        Medications as gifts!
                     </div>
                     {
                         thirdMeds(medications).map(medication => {
@@ -122,12 +122,12 @@ const MedicationIndex = (props) => {
                         })
                     }
                     <div className="text-2">
-                        Excepteur sint occaecat
+                        Lower blood glucose!
                     </div>
                 </div>
                 <div className="vertical-index-page-items">
                     <div className="text-2">
-                        Quis nostrud exercitation
+                        Acid Reflux? No problem!
                     </div>
                     {
                         fifthMeds(medications).map(medication => {
@@ -152,11 +152,11 @@ const MedicationIndex = (props) => {
                         })
                     }
                     <div className="text-2">
-                        Nim id est laborum
+                        Creating Change Together!
                     </div>
                 </div><div className="vertical-index-page-items">
                     <div className="text-2">
-                        Deserunt mollit
+                        Fresh from the factory!
                     </div>
                     {
                         seventhMeds(medications).map(medication => {

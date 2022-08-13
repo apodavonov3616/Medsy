@@ -16,7 +16,6 @@ export default class ReviewItem extends React.Component {
     }
 
     handleDelete(e) {
-        debugger
         e.preventDefault();
         this.props.deleteReview(this.props.reviewId);
         window.location.reload()
@@ -38,7 +37,7 @@ export default class ReviewItem extends React.Component {
                 <div>
                     {review.body}
                 </div>
-                {currentUser.id === review.buyer_id ?
+                {currentUser && currentUser.id === review.buyer_id ?
                     <div className='review-delete-button'>
                         <div onClick={this.handleDelete}>Delete</div>
                     </div>
