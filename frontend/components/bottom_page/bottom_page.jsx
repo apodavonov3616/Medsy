@@ -10,6 +10,7 @@ export default class BottomPage extends React.Component {
                     <div className="what-answer">
                         <b>A community doing good</b>
                         <br />
+                        <br />
                         Etsy is a global online marketplace,
                         where people come together to make,
                         buy medications. We're also a community
@@ -19,6 +20,7 @@ export default class BottomPage extends React.Component {
                     <div className="what-answer">
                         <b>Support independent businesses</b>
                         <br />
+                        <br />
                         There's no Medsy warehouse - just tens
                         of people selling the things they love.
                         We make the whole process easy, helping
@@ -27,6 +29,7 @@ export default class BottomPage extends React.Component {
                     </div>
                     <div className="what-answer">
                         <b>Peace of mind</b>
+                        <br />
                         <br />
                         Your privacy is the highest priority of
                         our dedicated team. And if you ever need

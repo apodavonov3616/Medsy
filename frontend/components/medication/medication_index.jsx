@@ -18,20 +18,20 @@ const MedicationIndex = (props) => {
     }
 
     const thirdMeds = (medications) => {
-        return medications.slice(8, 12)
+        return medications.slice(8, 10)
     }
 
     const fourthMeds = (medications) => {
-        return medications.slice(12, 16)
+        return medications.slice(10, 12)
     }
     const fifthMeds = (medications) => {
-        return medications.slice(16, 20)
+        return medications.slice(18, 20)
     }
     const sixthMeds = (medications) => {
-        return medications.slice(22, 26)
+        return medications.slice(14, 16)
     }
     const seventhMeds = (medications) => {
-        return medications.slice(26, 30)
+        return medications.slice(20, 22)
     }
     const eighthMeds = (medications) => {
         return medications.slice(30, medications.length)

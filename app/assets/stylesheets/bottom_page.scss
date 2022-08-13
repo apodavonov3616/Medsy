@@ -4,9 +4,9 @@
     text-align: center;
     font-weight: thin;
     padding: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    max-width: 1500px
+    margin-top: 1rem;
+    color: #222222 !important;
+
 }
 
 .what-is-medsy>h1 {
@@ -22,6 +22,7 @@
 }
 
 .what-answer {
+    color: #222 !important;
     font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -29,7 +30,8 @@
     margin: 20px;
 }
 
-.what-answer *>b {
+.what-answer>b {
     font-size: 28px;
     line-height: 36px;
+    margin: 20px;
 }

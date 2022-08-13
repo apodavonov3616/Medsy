@@ -32,13 +32,17 @@ header {
 }
 
 .header-rectangle {
-    background-color: #fae9c0;
+    background-color: #F8EBE6 !important;
     height: 150px;
     width: 100%;
     position: relative;
     top: 70px;
     z-index: -10;
 }
+
+// .app-div {
+//     background-color: beige;
+// }
 
 .search-bar-button {
     height: 44px;

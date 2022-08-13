@@ -17,7 +17,7 @@ import BottomPage from "./bottom_page/bottom_page"
 
 
 const App = () => (
-    <div>
+    <div className="app-div">
         <header>
             <Link to="/" className="title header-element">Medsy</Link>
             <SearchBar />
