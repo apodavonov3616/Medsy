@@ -50,10 +50,10 @@ class ReviewForm extends React.Component {
                     starSpacing="3px"
                 />
 
-                <label htmlFor="body">Add Comments</label>
+                <label className="add-comments" htmlFor="body">Add Comments</label>
                 <textarea value={this.state.body} id="body" cols="50" rows="10" onChange={this.changeBody}></textarea>
 
-                <button className="submit-review">Submit Review</button>
+                <button className="submit-review">Leave Review</button>
             </form>
         )
     };
