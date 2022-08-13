@@ -41,8 +41,8 @@ class ReviewForm extends React.Component {
                 <label htmlFor="rating">Rating:</label>
                 <StarRatings
                     rating={this.state.rating}
-                    starRatedColor='#ffd700'
-                    starHoverColor='#ffd700'
+                    starRatedColor='#222222'
+                    starHoverColor='#222222'
                     changeRating={this.changeRating}
                     numberOfStars={5}
                     name='rating'

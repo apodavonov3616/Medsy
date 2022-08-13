@@ -16,7 +16,7 @@
 
 .diabetes-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .diabetes-category-label {
@@ -39,7 +39,7 @@
 
 .migrane-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .migrane-category-label {
@@ -63,7 +63,7 @@
 
 .seizure-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .seizure-category-label {
@@ -86,7 +86,7 @@
 
 .GERD-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .GERD-category-label {
@@ -109,7 +109,7 @@
 
 .acne-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .acne-category-label {
@@ -132,7 +132,7 @@
 
 .allergies-button:hover {
     transform: scale(1.2);
-    cursor:cell
+    cursor: cell
 }
 
 .allergies-category-label {
@@ -156,12 +156,23 @@
 }
 
 .rhyme-button {
-    font-size: 15px;
-    font-family: cursive;
+    // font-size: 15px;
+    // font-family: cursive;
     background-color: white;
-    border: none
+    border: none;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #222;
 }
 
 .rhyme-button:hover {
-    cursor:grab
+    cursor: grab
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 5px;
 }

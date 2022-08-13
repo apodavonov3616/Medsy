@@ -49,7 +49,6 @@ const MedicationShow = (props) => {
                     <img src={medication.photoUrl} className="medication-show-image" />
                     <br />
                     <br />
-                    <b>Reviews</b>
                     <ReviewIndex medicationId={props.medication.id} />
                     <ReviewForm medicationId={props.medication.id} />
                 </div>
@@ -61,6 +60,7 @@ const MedicationShow = (props) => {
                     </div>
                     <div className="medication-show-description">{medication.description}</div>
                     <br />
+                    Number of Items
                     <select className="dropdown-content"
                         onChange={selectQuantity}
                     >
@@ -68,16 +68,16 @@ const MedicationShow = (props) => {
                         <option value="2">2</option>›
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="5">5</option>
 
                     </select>
-                    <button className='cart-button'
+                    <br />
+                    <button className='add-cart-button'
                         onClick={handleSubmitToCart}
                     >Add to cart</button>
                     <br />
-                    <form action="https://c.tenor.com/h5qs19y2WxMAAAAC/rickroll-lyrics.gif">
+                    {/* <form action="https://c.tenor.com/h5qs19y2WxMAAAAC/rickroll-lyrics.gif">
                         <button className="add-cart-button">Add to cart</button>
-                    </form>
+                    </form> */}
                     <div className="selling-fast">
                         <img src="https://medsy-seed.s3.amazonaws.com/hourglass.png" alt="hourglass" className="hourglass-image" />
                         <div>Selling fast! Only {randomNumber(2, 10)} left, and {randomNumber(10, 20)} people have it in their carts.</div>

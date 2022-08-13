@@ -35,15 +35,13 @@ export default class ReviewItem extends React.Component {
                     rating={review.rating}
                     starDimension="20px"
                     starSpacing="4px"
-                    starRatedColor='#f2b01e'
+                    starRatedColor='#222222'
                 />
                 <div>
                     {review.body}
                 </div>
                 {currentUser && currentUser.id === review.buyer_id ?
-                    <div className='review-delete-button'>
-                        <div onClick={this.handleDelete}>Delete</div>
-                    </div>
+                    <button className='review-delete-button' onClick={this.handleDelete}>Delete</button>
                     : null}
             </div>
         )

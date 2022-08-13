@@ -28,7 +28,10 @@ header {
 .greeting-container {
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: 14px;
+    min-width: 120px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .header-rectangle {
@@ -98,4 +101,8 @@ header {
 
 body {
     min-width: 870px;
+}
+
+.greeting-container *>p {
+    font-size: 14px;
 }
