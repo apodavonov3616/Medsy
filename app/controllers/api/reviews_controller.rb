@@ -14,6 +14,7 @@ class Api::ReviewsController < ApplicationController
         @review = Review.new(review_params)
         @review.medication_id = medication_id
         @review.buyer_id = @current_user.id
+        @review.buyer_name = @current_user.username
         
         if @review.save
             render :show

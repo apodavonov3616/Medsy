@@ -17,7 +17,6 @@ class ReviewsIndex extends React.Component {
     }
 
     handleDelete(e) {
-        debugger
         e.preventDefault();
         this.props.deleteReview(this.props.reviewId);
         window.location.reload()

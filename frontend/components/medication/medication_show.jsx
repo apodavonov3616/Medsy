@@ -45,7 +45,7 @@ const MedicationShow = (props) => {
         <div className="medication-show-page">
             <div className="index-quota">Great Choice of Medication!</div>
             <div className="medication-show-info">
-                <div className="medication-right-container">
+                <div className="medication-left-container">
                     <img src={medication.photoUrl} className="medication-show-image" />
                     <br />
                     <br />
@@ -53,7 +53,7 @@ const MedicationShow = (props) => {
                     <ReviewIndex medicationId={props.medication.id} />
                     <ReviewForm medicationId={props.medication.id} />
                 </div>
-                <div className="medication-left-container">
+                <div className="medication-right-container">
                     <div className="medication-show-seller">{medication.seller.username}</div>
                     <div className="medication-show-name">{medication.name}</div>
                     <div className="medication-show-price-container">

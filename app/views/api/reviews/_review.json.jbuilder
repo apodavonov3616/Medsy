@@ -1,1 +1,1 @@
-json.extract! review, :id, :body, :buyer_id, :medication_id, :rating, :created_at, :updated_at
+json.extract! review, :id, :body, :buyer_name, :buyer_id, :medication_id, :rating, :created_at, :updated_at
