@@ -26,7 +26,10 @@ export default class ReviewItem extends React.Component {
         return (
             <div>
                 <div>
-                    <Link to={`/users/${review.buyer_id}`}>{review.userName}</Link>
+                    {/* <Link to={`/users/${review.buyer_id}`}>{review.userName}</Link> */}
+                    <span>
+                        {review.buyer_name}
+                    </span>
                 </div>
                 <StarRatings
                     rating={review.rating}
