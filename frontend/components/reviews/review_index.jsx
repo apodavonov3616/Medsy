@@ -26,18 +26,18 @@ class ReviewsIndex extends React.Component {
         let { reviews, currentUser, deleteReview } = this.props;
         let reviewsList = reviews.map(review => {
             return (
-                <div className="review-index" key={review.id}>
-                    <li>
-                        <ReviewItem
-                            review={review}
-                            currentUser={currentUser}
-                            fetchReviews={fetchReviews}
-                            reviewId={review.id}
-                            deleteReview={deleteReview}
-                        />
-                        <br />
-                    </li>
-                </div>
+                // <div>
+                <li className="review-index" key={review.id}>
+                    <ReviewItem
+                        review={review}
+                        currentUser={currentUser}
+                        fetchReviews={fetchReviews}
+                        reviewId={review.id}
+                        deleteReview={deleteReview}
+                    />
+                    <br />
+                </li>
+                // </div>
             )
         })
 

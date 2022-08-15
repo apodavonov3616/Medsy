@@ -1,5 +1,5 @@
 class Api::ReviewsController < ApplicationController
-    before_action :require_logged_in, only: [:create, :edit, :delete]
+    before_action only: [:create, :edit, :delete]
 
     def index 
         medication = Medication.find(params[:medication_id])
@@ -13,8 +13,9 @@ class Api::ReviewsController < ApplicationController
 
         @review = Review.new(review_params)
         @review.medication_id = medication_id
-        @review.buyer_id = @current_user.id
-        @review.buyer_name = @current_user.username
+        # debugger
+        @review.buyer_id = current_user.id
+        @review.buyer_name = current_user.username
         
         if @review.save
             render :show

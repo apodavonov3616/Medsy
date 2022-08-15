@@ -22,6 +22,7 @@ export const updateResponse = review => (
 );
 
 export const destroyReview = (reviewId) => {
+
     return $.ajax({
         url: `/api/reviews/${reviewId}`,
         method: "DELETE"
