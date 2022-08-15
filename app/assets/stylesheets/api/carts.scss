@@ -76,3 +76,29 @@
 .number-items {
     font-size: 20px;
 }
+
+// .cart-meds-contents-right {
+//     box-shadow: 0 1px 6px 0 rgba(34, 34, 34, 0.15);
+// }
+
+.checkout-button {
+    border: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.checkout-button:hover {
+    cursor: pointer;
+}
+
+.cart-right-content-internal {
+    box-shadow: 0 2px 6px 0 rgba(34, 34, 34, 0.15);
+    border-radius: 8px;
+}
+
+.cart-right-content-internal-2 {
+    margin: 10px;
+    padding-bottom: 10px;
+}

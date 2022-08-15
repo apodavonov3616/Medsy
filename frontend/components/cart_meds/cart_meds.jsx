@@ -87,14 +87,25 @@ const CartMeds = (props) => {
                     </ul>
                 </div>
                 <div className="cart-meds-contents-right">
-                    <h2>How you'll pay</h2>
-                    <div>
-                        Item(s) total Cost:&nbsp;
-                        {totalPrice()}
+                    <div className="cart-right-content-internal">
+                        <div className="cart-right-content-internal-2">
+                            <h2>How you'll pay</h2>
+                            <label class="payment-type"><input type="radio" name="payment" />Credit Card</label>
+                            <br />
+                            <br />
+                            <label class="payment-type"><input type="radio" name="payment" />PayPal</label>
+                            <br />
+                            <br />
+                            <div>
+                                Item(s) total Cost:&nbsp;
+                                {totalPrice()}
+                            </div>
+                            <br />
+                            <button className="checkout-button">
+                                Checkout
+                            </button>
+                        </div>
                     </div>
-                    <button>
-                        Checkout
-                    </button>
                 </div>
             </div>
 
