@@ -32,7 +32,6 @@ const MedicationShow = (props) => {
 
         if (props.currentUserId) {
             const cartMed = {
-                id: props.medication.id,
                 med_id: props.medication.id,
                 quantity: quantity,
                 total_cost: props.medication.price
@@ -53,8 +52,8 @@ const MedicationShow = (props) => {
                     <img src={medication.photoUrl} className="medication-show-image" />
                     <br />
                     <br />
-                    <ReviewIndex medicationId={props.medication.id} />
-                    <ReviewForm medicationId={props.medication.id} />
+                    <ReviewIndex medicationId={props.medication.med_id} />
+                    <ReviewForm medicationId={props.medication.med_id} />
                 </div>
                 <div className="medication-right-container">
                     <div className="medication-show-seller">{medication.seller.username}</div>
