@@ -102,7 +102,7 @@ const CartMeds = (props) => {
                             </div>
                             <br />
                             <button className="checkout-button">
-                                Checkout
+                                Proceed to Checkout
                             </button>
                         </div>
                     </div>
