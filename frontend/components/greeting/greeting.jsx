@@ -16,7 +16,9 @@ const Greeting = (props) => {
 
     const display = currentUser ? (
         <div className="greeting">
-            <button onClick={logout} className="logout-button">Log Out</button>
+            <Link to={"/"}>
+                <button onClick={logout} className="logout-button">Log Out</button>
+            </Link>
             <Link className="cart-meds-button" to={`/cart_meds`}>
                 <img className="cart-picture" src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg" alt="cart" />
             </Link>
