@@ -46,8 +46,8 @@ const CartMeds = (props) => {
                         {
                             cartMeds.map((cartMed) => {
                                 return (
-                                    <div className="cart-med">
-                                        <Link to={`/medications/${cartMed.medicationId}`}>
+                                    <div className="cart-med" key={cartMed.medicationId}>
+                                        <Link to={`/ medications / ${cartMed.medicationId} `}>
                                             <img src={cartMed.photoUrl} className="cart-photo" />
                                         </Link>
                                         <div className='cart-med-info'>
