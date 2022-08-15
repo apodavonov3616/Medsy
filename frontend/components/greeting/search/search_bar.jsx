@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { fetchMedications } from '../../../actions/medication_actions'
 
@@ -15,15 +15,21 @@ class SearchBar extends React.Component {
     };
 
     update(e) {
-        this.setState({search: e.target.value})
+        this.setState({ search: e.target.value })
     }
 
     handleSubmit(e) {
         e.preventDefault();
         this.props.history.push(`/search/${this.state.search}`);
+        this.setState({ search: '' })
     }
 
-    render () {
+    //redirect on logout
+    //confirmation
+    //readme
+    //console
+
+    render() {
 
         return (
 
@@ -32,10 +38,10 @@ class SearchBar extends React.Component {
                     <form onSubmit={this.handleSubmit} className="search-form">
                         <div className="search-input-container">
                             <input type="text"
-                                placeholder= "    Search Medications..."
+                                placeholder="    Search Medications..."
                                 value={this.state.search}
                                 onChange={this.update}
-                                className="search-input"/>
+                                className="search-input" />
                             <button className="search-bar-button"></button>
                         </div>
                     </form>
