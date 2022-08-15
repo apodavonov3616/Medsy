@@ -28,6 +28,12 @@ const CartMeds = (props) => {
     // if(!cartMeds) {
     //     return null;
     // }
+    const totalPrice = () => {
+        let total = 0;
+        props.cartMeds.forEach((item) => total += (item.price * item.quantity))
+        // return total.round(2)
+        return (Math.round(total * 100) / 100)
+    }
 
     return (
         <div className="cart-meds-page">
@@ -81,9 +87,10 @@ const CartMeds = (props) => {
                     </ul>
                 </div>
                 <div className="cart-meds-contents-right">
-                    How you'll pay
+                    <h2>How you'll pay</h2>
                     <div>
-                        Item(s) total_cost
+                        Item(s) total Cost:&nbsp;
+                        {totalPrice()}
                     </div>
                     <button>
                         Checkout

@@ -85,9 +85,9 @@ export default class BottomPage extends React.Component {
                         <a target="_blank" className="project-link" href="https://github.com/apodavonov3616">Github</a>
                     </div>
                 </div>
-                <div className="dark-footer-box">
+                {/* <div className="dark-footer-box">
 
-                </div>
+                </div> */}
             </div>
         )
     };
