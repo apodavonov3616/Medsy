@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
-    window.store = store;
-    window.getState = store.getState;
-    window.fetchMedication = fetchMedication
+    // window.store = store;
+    // window.getState = store.getState;
+    // window.fetchMedication = fetchMedication
     ReactDOM.render(<Root store={store} />, root);
 })

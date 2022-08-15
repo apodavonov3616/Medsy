@@ -49,14 +49,14 @@ class SessionForm extends React.Component {
             if (this.props.formType === 'Register') {
                 return (
                     <div>
-                    <br />
-                    <label className="username-password-input">Email
-                        <input
-                            type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')} 
-                            className="login-input"/>
-                    </label>
+                        <br />
+                        <label className="username-password-input">Email
+                            <input
+                                type="text"
+                                value={this.state.email}
+                                onChange={this.update('email')}
+                                className="login-input" />
+                        </label>
                     </div>
                 );
             }
@@ -79,23 +79,23 @@ class SessionForm extends React.Component {
         }
 
         let demoUser = () => {
-            if (this.props.formType == "Sign In"){
-            return (
-                <div>
-                    <span className="or">OR</span>
-                    <br />
-                    <br />
-                    <div className="login-register-button">
+            if (this.props.formType == "Sign In") {
+                return (
+                    <div>
+                        <span className="or">OR</span>
                         <br />
                         <br />
-                        <input
-                        type="submit"
-                        value="Log In as Demo User"
-                        className="form-button"
-                        onClick={this.demoUser}
-                        />
+                        <div className="login-register-button">
+                            <br />
+                            <br />
+                            <input
+                                type="submit"
+                                value="Log In as Demo User"
+                                className="form-button"
+                                onClick={this.demoUser}
+                            />
+                        </div>
                     </div>
-                </div>
                 )
             }
         };
@@ -108,7 +108,7 @@ class SessionForm extends React.Component {
                 {/* <div className="form-welcome">Welcome to Medsy!</div> */}
                 <div className='form'>
                     <div className="error">{this.errors()}</div>
-                    <span className="sign-in-v-register"> 
+                    <span className="sign-in-v-register">
                         <div>{this.props.formType}</div>
                         <div>{otherForm()}</div>
                     </span>
@@ -133,13 +133,13 @@ class SessionForm extends React.Component {
                             {signingUp()}
                             <br />
                             <input type="checkbox" name="Stay Signed In" id="stay-signed-in" />
-                            <label for="stay-signed-in">Stay Signed In</label>
+                            <label htmlFor="stay-signed-in">Stay Signed In</label>
                             <br />
                             <br />
                             <label className="login-register-button">
                                 <br />
                                 <br />
-                            <input className="session-submit" type="submit" value={this.props.formType} />
+                                <input className="session-submit" type="submit" value={this.props.formType} />
                             </label>
                             <br />
                             <br />
@@ -147,10 +147,10 @@ class SessionForm extends React.Component {
                     </form>
                     {demoUser()}
                 </div>
-                <div className="sign-in-policy">By clicking Sign In, you agree to Medsy's Terms 
-                    of Use and Privacy Policy. Medsy may send you 
-                    communications; you may change your preferences 
-                    in your account settings. We'll never post without 
+                <div className="sign-in-policy">By clicking Sign In, you agree to Medsy's Terms
+                    of Use and Privacy Policy. Medsy may send you
+                    communications; you may change your preferences
+                    in your account settings. We'll never post without
                     your permission.</div>
             </div >
         );
