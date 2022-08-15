@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
         this.setState({ search: '' })
     }
 
-    //redirect on logout
+    //redirect on logout, yes
     //when not loggedin, open modal to login
     //confirmation
     //readme

@@ -3,6 +3,8 @@ import { fetchMedication } from '../../actions/medication_actions';
 import MedicationShow from './medication_show';
 import * as MedicationAPIUtil from "../../util/medication_util";
 import { createCartMed } from '../../actions/cart_meds_actions';
+import { openModal } from "../../actions/modal_actions"
+
 
 
 const mSTP = (state, ownProps) => {
@@ -17,7 +19,9 @@ const mDTP = (dispatch) => {
   return {
     fetchMedication: (medicationId) => dispatch(fetchMedication(medicationId)),
     updateCartMed: (cart, cartId) => dispatch(updateCartMed(cart, cartId)),
-    createCartMed: (cartMed) => dispatch(createCartMed(cartMed))
+    createCartMed: (cartMed) => dispatch(createCartMed(cartMed)),
+    openModal: (formType) => dispatch(openModal(formType))
+
   }
 }
 

@@ -30,14 +30,18 @@ const MedicationShow = (props) => {
     const handleSubmitToCart = (e) => {
         e.preventDefault();
 
-        const cartMed = {
-            id: props.medication.id,
-            med_id: props.medication.id,
-            quantity: quantity,
-            total_cost: props.medication.price
+        if (props.currentUserId) {
+            const cartMed = {
+                id: props.medication.id,
+                med_id: props.medication.id,
+                quantity: quantity,
+                total_cost: props.medication.price
+            }
+            props.createCartMed(cartMed).then(() =>
+                props.history.push('/cart_meds'))
+        } else {
+            props.openModal('login')
         }
-        props.createCartMed(cartMed).then(() =>
-            props.history.push('/cart_meds'))
     }
     const { medication, carts } = props
     if (!medication) return null
