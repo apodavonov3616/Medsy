@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import { createReview } from '../../actions/review_actions';
 import React from 'react'
 import StarRatings from 'react-star-ratings';
+import { openModal } from "../../actions/modal_actions"
+
 
 class ReviewForm extends React.Component {
     constructor(props) {
@@ -16,10 +18,14 @@ class ReviewForm extends React.Component {
     };
 
     handleSubmit(event) {
-        event.preventDefault();
-        this.props.createReview(this.state, this.props.medicationId);
-        this.setState({ rating: 0, body: '' });
-        window.location.reload()
+        if (this.props.currentUser) {
+            event.preventDefault();
+            this.props.createReview(this.state, this.props.medicationId);
+            this.setState({ rating: 0, body: '' });
+            window.location.reload()
+        } else {
+            this.props.openModal('login')
+        }
 
     }
 
@@ -66,7 +72,9 @@ const mSTP = (state) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    createReview: (medicationId, review) => dispatch(createReview(medicationId, review))
+    createReview: (medicationId, review) => dispatch(createReview(medicationId, review)),
+    openModal: (formType) => dispatch(openModal(formType))
+
 })
 
 export default connect(mSTP, mapDispatchToProps)(ReviewForm);
