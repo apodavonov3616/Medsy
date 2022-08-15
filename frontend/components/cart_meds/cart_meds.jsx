@@ -30,20 +30,24 @@ const CartMeds = (props) => {
     // }
 
     return (
-        <div>
+        <div className="cart-meds-page">
+            <div className="number-items-cart">
+                {cartMeds.length} items in your cart
+            </div>
             <ul>
                 {
                     cartMeds.map((cartMed) => {
                         return (
-                            <div>
+                            <div className="cart-med">
                                 <Link to={`/medications/${cartMed.medicationId}`}>
-                                    {/* <img src={cartMed.photoUrl} className="direct-img" /> */}
+                                    <img src={cartMed.photoUrl} className="cart-photo" />
                                 </Link>
                                 <h2 className="medication-name">{cartMed.name}</h2>
+                                Total Price:
                                 <h2 className="medication-price">${cartMed.price * cartMed.quantity}</h2>
-                                <h2>{cartMed.quantity}</h2>
-
-                                <select className="dropdown-content"
+                                {/* <h2>{cartMed.quantity}</h2> */}
+                                Number of items:
+                                <select className="cart-dropdown-content"
                                     value={cartMed.quantity}
                                     id="quanityId"
                                     onChange={handleUpdateQuantity(cartMed)}
@@ -53,12 +57,13 @@ const CartMeds = (props) => {
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
-                                <button onClick={handleDeleteMed}>Delete</button>
+                                <button className="cart-delete-content" onClick={handleDeleteMed}>Delete</button>
                             </div>
                         )
                     })
                 }
             </ul>
+
         </div >
     )
 }
