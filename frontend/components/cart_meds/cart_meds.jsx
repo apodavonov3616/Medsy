@@ -32,6 +32,7 @@ const CartMeds = (props) => {
         let total = 0;
         props.cartMeds.forEach((item) => total += (item.price * item.quantity))
         // return total.round(2)
+        // debugger
         return (Math.round(total * 100) / 100)
     }
 
@@ -46,8 +47,8 @@ const CartMeds = (props) => {
                         {
                             cartMeds.map((cartMed) => {
                                 return (
-                                    <div className="cart-med" key={cartMed.medicationId}>
-                                        <Link to={`/ medications / ${cartMed.medicationId} `}>
+                                    <div className="cart-med" key={cartMed.id}>
+                                        <Link to={`/medications/${cartMed.med_id}`}>
                                             <img src={cartMed.photoUrl} className="cart-photo" />
                                         </Link>
                                         <div className='cart-med-info'>
@@ -77,7 +78,7 @@ const CartMeds = (props) => {
                                             <br />
                                             <div>
                                                 <input type="checkbox" name="gift" value="Gift" />
-                                                <label for="gift">This medication is a gift</label>
+                                                <label name="gift">This medication is a gift</label>
                                             </div>
                                         </div>
                                     </div>
@@ -90,10 +91,10 @@ const CartMeds = (props) => {
                     <div className="cart-right-content-internal">
                         <div className="cart-right-content-internal-2">
                             <h2>How you'll pay</h2>
-                            <label class="payment-type"><input type="radio" name="payment" />Credit Card</label>
+                            <label className="payment-type"><input type="radio" name="payment" />Credit Card</label>
                             <br />
                             <br />
-                            <label class="payment-type"><input type="radio" name="payment" />PayPal</label>
+                            <label className="payment-type"><input type="radio" name="payment" />PayPal</label>
                             <br />
                             <br />
                             <div>
