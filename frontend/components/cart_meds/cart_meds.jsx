@@ -102,9 +102,12 @@ const CartMeds = (props) => {
                                 {totalPrice()}
                             </div>
                             <br />
-                            <button className="checkout-button">
-                                Proceed to Checkout
-                            </button>
+                            <Link to={`/thank_you`}>
+                                <button className="checkout-button">
+                                    Proceed to Checkout
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

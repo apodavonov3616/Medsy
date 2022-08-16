@@ -14,6 +14,7 @@ import CategoriesContainer from "./categories/categories_container";
 import CategoriesOptions from "./categories/categories_options";
 import CartMedsContainer from "./cart_meds/cart_meds_container";
 import BottomPage from "./bottom_page/bottom_page"
+import ThankYou from "./thank_you/thank_you"
 
 
 const App = () => (
@@ -38,7 +39,7 @@ const App = () => (
             <Route exact path="/search/:searched" component={SearchShow} />
             <Route exact path="/category/:category" component={CategoriesContainer} />
             <Route exact path="/cart_meds" component={CartMedsContainer} />
-
+            <Route exact path="/thank_you" component={ThankYou} />
         </Switch>
         <BottomPage />
     </div>
