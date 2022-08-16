@@ -1,3 +1,23 @@
+
+
+
+
+
+
+
+### Destination Selector
+
+
+![code](/frontend/src/fun-finder-callback.png)
+
+## User Functions
+
+### User Authentication 
+
+### User Profile
+
+
+
 # Medsy - A copycat of Etsy using medications!!!
 
 [Visit Live Site](http://medsy.herokuapp.com/#/)
@@ -24,5 +44,19 @@ To fix this, I added another route to render the index component:
     `<Route exact path="/search" component={MedicationIndexContainer} />`
 This allowed the index page to show all medications whenever a user searches for an empty string.
 
+## Core Features
+
+- ### User Authentication 
+    Users are able to sign up, sign in, and sign out. A user remains signed in even when a page is changed or reloaded.
+    A registered user's information remains saved and is able to be used again upon signing in. Users can also use a demo
+    account to get the full experience.
+- ### Search
+    Users are able to search for a medication and have all of the medications whose name have the keyword to display on the screen. The search bar clears with every search and is able to be reused whether a user is logged in or not.
+- ### Medication Listings
+    The website is populated by multiple medications that render on the index page. Upon clicking any of the categories on top, all of the medications related to the chosen category are rendered. When clicked, the website redirects the user to a medication's show page, which displays the information about the medications such as description and reviews.
+- ### Reviews
+    This is a feature that is available for every single medication. All users can see reviews, but only logged in users can leave reviews. Additionally, only users who left a particular review can delete that review. Any attempts by non-logged in users to leave a review opens up a modal to prompt the user to login first.
+- ### Carts
+    This CRUD feature is only available to logged in users. A medication can be added to a cart at any time. Once on the carts page, a user can see the items, adjust the number of items in their cart, and delete the item from their cart. A total price is shown for each medication and the overall cart amount.
 
 
