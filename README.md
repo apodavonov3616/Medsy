@@ -25,7 +25,7 @@ This website was designed to mimic the original etsy.com website. Rather than us
     Users are able to sign up, sign in, and sign out. A user remains signed in even when a page is changed or reloaded.
     A registered user's information remains saved and is able to be used again upon signing in. Users can also use a demo
     account to get the full experience.
-    
+
     ![login](medsy-login.png)
 
 
@@ -60,7 +60,7 @@ To fix this, I added another route to render the index component:
 This allowed the index page to show all medications whenever a user searches for an empty string.
 
 - ### 2
-After the using the search bar, the letters that were typed in remained indefinitely until the page was fully reloaded. To fix that, setting the state of 'search' (which was connected to the input of the search bar) to an empty string after clicking search remedied this problem.
+After the using the search bar, the letters that were typed in remained indefinitely until the page was fully reloaded. Thanks to Ricky Zheng's advice, I set state of 'search' (which was connected to the input of the search bar) to an empty string withing handleSubmit() after some text was searched. This assured that whenever something is searched, it's always reset to the original empty string.
  
 ![search](medsy-text-search.png)
 
