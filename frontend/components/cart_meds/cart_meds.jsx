@@ -31,8 +31,6 @@ const CartMeds = (props) => {
     const totalPrice = () => {
         let total = 0;
         props.cartMeds.forEach((item) => total += (item.price * item.quantity))
-        // return total.round(2)
-        // debugger
         return (Math.round(total * 100) / 100)
     }
 
