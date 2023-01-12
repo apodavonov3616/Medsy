@@ -19,6 +19,8 @@ import ThankYou from "./thank_you/thank_you"
 
 const TRACKING_ID = "G-MKGDQV9X4T"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname);
+
 
 const App = () => (
     <div className="app-div">
