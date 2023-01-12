@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import React from "react";
 import GreetingContainer from "./greeting/greeting_container";
 import { Route, Switch } from "react-router-dom";
@@ -24,7 +24,7 @@ ReactGA.initialize('G-MKGDQV9X4T');
 const App = () => {
 
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send("pageview")
     }, [])
 
     return (
