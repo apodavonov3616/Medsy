@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MKGDQV9X4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MKGDQV9X4T');
+</script>
     <title>Medsy</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <link rel="icon" href="https://logodix.com/logo/799868.png">
