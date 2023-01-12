@@ -18,7 +18,7 @@ import BottomPage from "./bottom_page/bottom_page"
 import ThankYou from "./thank_you/thank_you"
 
 function initializeReactGA() {
-    ReactGA.initialize('G-MKGDQV9X4T');
+    ReactGA.initialize('UA-123791717-1');
     ReactGA.pageview('/homepage');
 }
 
