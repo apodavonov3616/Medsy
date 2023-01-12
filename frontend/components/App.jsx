@@ -17,12 +17,8 @@ import CartMedsContainer from "./cart_meds/cart_meds_container";
 import BottomPage from "./bottom_page/bottom_page"
 import ThankYou from "./thank_you/thank_you"
 
-function initializeReactGA() {
-    ReactGA.initialize('G-MKGDQV9X4T');
-    ReactGA.pageview('/homepage');
-}
-
-initializeReactGA()
+const TRACKING_ID = "G-MKGDQV9X4T"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => (
     <div className="app-div">
