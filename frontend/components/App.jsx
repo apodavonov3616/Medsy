@@ -17,6 +17,11 @@ import BottomPage from "./bottom_page/bottom_page"
 import ThankYou from "./thank_you/thank_you"
 
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("your GA measurement id");
+ReactGA.send("pageview");
+
 const App = () => (
     <div className="app-div">
         <header>
