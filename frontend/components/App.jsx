@@ -18,42 +18,36 @@ import BottomPage from "./bottom_page/bottom_page"
 import ThankYou from "./thank_you/thank_you"
 
 ReactGA.initialize('G-MKGDQV9X4T');
+ReactGA.send("pageview")
 
 
 
-const App = () => {
-
-    useEffect(() => {
-        ReactGA.send("pageview")
-    }, [])
-
-    return (
-        <div className="app-div">
-            <header>
-                <Link to="/" className="title header-element">Medsy</Link>
-                <SearchBar />
-                <GreetingContainer />
-                <ModalContainer />
-            </header>
-            <div className="header-rectangle"></div>
-            <br />
-            <CategoriesOptions />
-            <br />
-            <br />
-            <br />
-            <br />
-            <Switch>
-                <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
-                <Route exact path="/" component={MedicationIndexContainer} />
-                <Route exact path="/search" component={MedicationIndexContainer} />
-                <Route exact path="/search/:searched" component={SearchShow} />
-                <Route exact path="/category/:category" component={CategoriesContainer} />
-                <Route exact path="/cart_meds" component={CartMedsContainer} />
-                <Route exact path="/thank_you" component={ThankYou} />
-            </Switch>
-            <BottomPage />
-        </div>
-    )
-};
+const App = () => (
+    <div className="app-div">
+        <header>
+            <Link to="/" className="title header-element">Medsy</Link>
+            <SearchBar />
+            <GreetingContainer />
+            <ModalContainer />
+        </header>
+        <div className="header-rectangle"></div>
+        <br />
+        <CategoriesOptions />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Switch>
+            <Route exact path="/medications/:medicationId" component={MedicationShowContainer} />
+            <Route exact path="/" component={MedicationIndexContainer} />
+            <Route exact path="/search" component={MedicationIndexContainer} />
+            <Route exact path="/search/:searched" component={SearchShow} />
+            <Route exact path="/category/:category" component={CategoriesContainer} />
+            <Route exact path="/cart_meds" component={CartMedsContainer} />
+            <Route exact path="/thank_you" component={ThankYou} />
+        </Switch>
+        <BottomPage />
+    </div>
+);
 
 export default App;
