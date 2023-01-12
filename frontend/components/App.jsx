@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React from "react";
 import GreetingContainer from "./greeting/greeting_container";
 import { Route, Switch } from "react-router-dom";
@@ -16,6 +17,12 @@ import CartMedsContainer from "./cart_meds/cart_meds_container";
 import BottomPage from "./bottom_page/bottom_page"
 import ThankYou from "./thank_you/thank_you"
 
+function initializeReactGA() {
+    ReactGA.initialize('G-MKGDQV9X4T');
+    ReactGA.pageview('/homepage');
+}
+
+initializeReactGA()
 
 const App = () => (
     <div className="app-div">
