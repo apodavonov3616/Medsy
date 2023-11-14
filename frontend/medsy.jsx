@@ -33,5 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var http = require("http");
 setInterval(function() {
-    http.get("http://<your app name>.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
+    http.get("https://dashboard.heroku.com/apps/medsy");
+}, 1500000); // every 25 minutes (1500000)
