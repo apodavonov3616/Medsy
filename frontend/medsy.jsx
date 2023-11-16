@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(<Root store={store} />, root);
 })
 
-var http = require("http");
 setInterval(function() {
-    http.get("https://dashboard.heroku.com/apps/medsy");
-}, 1500000); // every 25 minutes (1500000)
+    let request = new XMLHttpRequest();
+    request.open("GET", "https://chess-application-e77c614f9046.herokuapp.com/", true);
+    request.onload = () => {}
+    request.send();
+}, 1500000)
