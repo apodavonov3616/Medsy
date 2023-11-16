@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(<Root store={store} />, root);
 })
 
-setInterval(function() {
-    let request = new XMLHttpRequest();
-    request.open("GET", "https://chess-application-e77c614f9046.herokuapp.com/", true);
-    request.onload = () => {}
-    request.send();
-}, 1500000)
+// setInterval(function() {
+//     let request = new XMLHttpRequest();
+//     request.open("GET", "https://medsy.herokuapp.com/", true);
+//     request.onload = () => {}
+//     request.send();
+// }, 1500000)
